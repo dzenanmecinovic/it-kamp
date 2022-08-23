@@ -71,7 +71,7 @@ body {
     text-decoration: none;
     border: 2px solid black;
     color: black;
-    padding-top: 5px;
+    padding: 5px;
     height: 25px;
     border-radius: 80px 40px;
 }
