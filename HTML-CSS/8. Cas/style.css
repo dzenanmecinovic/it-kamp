@@ -1,0 +1,52 @@
+.main {
+    margin: 15px auto;
+    width: 400px;
+    height: 600px;
+    background-color: chocolate;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main h1 {
+    text-align: center;
+    text-transform: uppercase;
+   /* text-transform: capitalize; */
+   /* text-transform: lowercase */
+   /* text-transform: none; */
+    margin: 15px;
+}
+
+.main h3 {
+    text-transform: capitalize;
+    margin: 25px;
+    text-align: center;
+}
+
+.main p {
+    margin: 15px;
+    text-align: justify;
+    text-indent: 20px;
+    text-align-last:center;
+}
+
+.main img:hover {
+    content: url('../VEZBANJE/kartica/harvard2.jpg');
+}
+
+.main p:hover {
+    background-color: greenyellow;
+    transition: 0.5s ease-in-out;
+}
+
+/* .paragraf {
+    width: 200px;
+    display: inline-block;
+} */
