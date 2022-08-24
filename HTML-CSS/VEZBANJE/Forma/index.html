@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forma</title>
+</head>
+<body>
+    <h1>Konkurs za zaposljavanje</h1>
+    <div class="forma">
+        <form action="./forma.html">
+            <label for="name" id="name"><b>Unesite ime i prezime:</b></label>
+            <input type="text" id="name" size="35" maxlength="35" value="" required/>
+            <br>
+            <br>
+            <label for="job" id="job"><b>Vas trenutni posao:</b></label>
+            <input type="text" id="job" size="40" maxlength="40" value=""required>
+            <br>
+            <br>
+            <label for="description" id="desc"><b>Par reci o sebi:</b></label>
+            <textarea name="Comments" cols=30 rows=4 placeholder="..."></textarea>
+            <br>
+            <br>
+            <label for="exercise"><b>Da li ste zainteresovani za dodatne dnevne poslove?</b></label>
+            <br>
+            <br>
+                <div class="opcije">
+                    <input type="radio" name="exercise" value="1" required><b> Da</b> 
+                    <input type="radio" name="exercise" value="2" required><b> Ne</b>
+                </div>
+            <br>
+            <label for="work" id="work"><b>Da li zelite da radite od kuce ili u firmi?</b></label>
+            <br>
+            <br>
+                <div class="izbor">
+                    <input type="checkbox" id="checkbox" name="checkbox"><b> Kuca</b>
+                    <input type="checkbox"><b> Firma</b>
+                </div>
+            <br>
+            <br>
+            <label for="time"><b>Koje vreme vam odgovara za obavljanje posla?</b></label>
+            <br>
+            <br>
+            <select name="time">
+                <option value=1 selected = "true">Prva smena (od 7h do 15h)</option>
+                <option value=2 >Druga smena (od 15h do 23h)</option>
+                <option value=3 >Radim od kuce</option>
+            </select>
+            <br>
+            <br>
+                <div class="buttons">
+                    <button type="reset">Ispocetka</button>
+                    <button type="submit">Posalji</button>
+                </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
