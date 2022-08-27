@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: 20px auto;
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: gray;
+}
+
+img {
+    height: 200px;
+    width: 400px;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+
+h2 {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+
+#icon {
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.icontext {
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Neucha', cursive;
+}
