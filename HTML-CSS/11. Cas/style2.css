@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    /* margin: auto; */
+    width: 300px;
+    height: 200px;
+    background-color: #87ceeb;
+    padding: 20px;
+    overflow: hidden;
+    /* display: block; difoltna vrednost za div */
+    /* display: inline; ako je display inline, onda gubimo mogucnost definisana odredjenih stilova kao sto su width, height, margin, padding,... */
+    display: inline-block;
+
+}
+
+/* .main:nth-of-type(2) {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    overflow: auto;
+} */
+
+/* .main:nth-of-type(3) {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    overflow: auto;
+} */
+
+.main:nth-of-type(2) {
+    background-color: tomato;
+    /* display: none; */
+    /* preko visibility hidden ce se sakriti sadrzaj, ali i dalje zauzima prostor na stranici. */
+    visibility: hidden;
+}
+
+.main:nth-of-type(3) {
+    background-color: gray;
+}
+
+.main p {
+    line-height: 25px;
+}
+
+.second {
+    margin: auto;
+    width: 700px;
+    height: 450px;
+    background-image:url("./1.jpg");
+    background-repeat: no-repeat;
+    /* background-size: contain; povecava se ili sirina ili visina dok ne dodje do krajnje tacke jednog od toga dvoje */
+    background-size: cover; /* Slika se razvlaci kroz celu visinu i duzinu */
+}

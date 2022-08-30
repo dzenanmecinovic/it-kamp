@@ -48,10 +48,11 @@ body {
     color: #696868;
 }
 
-.kartica .sifra {
+.kartica a {
     font-size: 15px;
     margin-left: 55px;
     color: #696868;
+    text-decoration: none;
 }
 
 .kartica button {
@@ -67,14 +68,18 @@ body {
     background-color: rgb(29, 137, 217);
     width: 350px;
     height: 50px;
+    cursor: pointer;
 }
 
-.kartica .footer-form {
+.kartica .signup .footer-form {
     padding-left: 180px;
     font-size: 15px;
     color: #696868;
 }
 
-.kartica .footer-form a {
+.kartica .signup .footer-form a {
     text-decoration: none;
+    color: lightskyblue;
+    width: 100%;
+    padding-left: 1px;
 }
