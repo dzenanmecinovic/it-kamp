@@ -36,6 +36,8 @@ body {
     border-bottom: 2px solid gray;
     margin-right: 50px;
     width: 400px;
+    height: 40px;
+    font-size: 15px;
 }
 
 .kartica input #placeholder {
@@ -81,5 +83,5 @@ body {
     text-decoration: none;
     color: lightskyblue;
     width: 100%;
-    padding-left: 1px;
+    /* padding-left: 1px; */
 }
