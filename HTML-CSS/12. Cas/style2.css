@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: plum;
+}
+
+.img {
+    height: 90%;
+    width: 10%;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links a {
+    text-decoration: none;
+}
