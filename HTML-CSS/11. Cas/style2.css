@@ -49,8 +49,11 @@
     margin: auto;
     width: 700px;
     height: 450px;
-    background-image:url("./1.jpg");
+    background-image:url("./1.jpg"), url('./2.jpg');
     background-repeat: no-repeat;
     /* background-size: contain; povecava se ili sirina ili visina dok ne dodje do krajnje tacke jednog od toga dvoje */
-    background-size: cover; /* Slika se razvlaci kroz celu visinu i duzinu */
+    /* background-size: cover;  Slika se razvlaci kroz celu visinu i duzinu */
+    /* background-size: 100%; Jedna vrednost predstavlja sirinu */
+    /* background-size: 100% 50%; Prva vrednost se odnosi na sirinu, druga na visinu */
+    background-size: 100% 50%, 100% 100%;
 }
