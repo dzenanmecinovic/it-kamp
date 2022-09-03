@@ -3,11 +3,25 @@
     padding: 0;
 }
 
-#myVideo {
+#Video {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+}
+
+.back-button {
+    text-align: center;
+}
+
+.back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.back-button a:hover {
+    color:royalblue;
 }
