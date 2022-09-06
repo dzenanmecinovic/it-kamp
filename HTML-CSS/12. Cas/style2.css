@@ -6,12 +6,14 @@
 header {
     width: 100vw;
     height: 20vh;
-    background-color: plum;
+    background-color: #dda0dd;
 }
 
 .img {
     height: 90%;
     width: 10%;
+    margin-left: 1%;
+    margin-top: 0.5%;
 }
 
 .links {
@@ -19,5 +21,31 @@ header {
 }
 
 .links a {
+    font-size: 1rem;
     text-decoration: none;
+    color: black;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    margin-left:  7.5rem;
+    cursor: pointer;
 }
+
+/* .links a:visited {
+    padding: 0.5rem;
+    color: #ffff00;
+    background-color: #7fffd4;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+} */
+
+
+.links a:hover {
+    padding: 0.5rem;
+    background-color: #7fffd4;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+/* .links a:active {
+    color: red;
+} */
