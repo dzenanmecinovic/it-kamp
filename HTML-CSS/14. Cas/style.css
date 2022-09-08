@@ -101,5 +101,10 @@ body {
 
 .dva .under-form-text {
     margin-top: 10vh;
-    text-align: center;
+    margin-right: 1vh;
+}
+
+.dva .under-form-text a {
+    margin: auto;
+    color: black;
 }
