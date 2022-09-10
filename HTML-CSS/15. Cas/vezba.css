@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: 5px;
+    height: 90vh;
+    width: 50%;
+    background-color: red;
+}
+
+.box1 {
+    height: 20%;
+    width: 20%;
+    background-color: aqua;
+    position: relative;
+    top: 100px;
+    left: 180px;
+}
+
+.box2 {
+    height: 20%;
+    width: 20%;
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 360px;
+    padding-left: 50px;
+}
+
+.box3 {
+    height: 20%;
+    width: 20%;
+    background-color: gray;
+    position: relative;
+    bottom: 90px;
+    left: 240px;
+}
