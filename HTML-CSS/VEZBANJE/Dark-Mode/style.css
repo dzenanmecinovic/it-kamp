@@ -4,21 +4,21 @@
 }
 
 body {
-    color: #fff;
-    background-color: black;
+    color: #222;
+    background: #fff;
     font: 100% system-ui;
-}
-
-a {
-    color: #03c;
-}
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            color: white;
-            background-color: black;
-        }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
     }
+  
+    body a {
+      color: #809fff;
+    }
+  }
 
 h1 {
     margin-top: 10pc;
