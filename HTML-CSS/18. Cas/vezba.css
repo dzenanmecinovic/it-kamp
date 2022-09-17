@@ -23,7 +23,7 @@ header ul {
     display: flex;
     align-self: center;
     padding-right: 5rem;
-    /* margin-left: 100px; */
+    margin-left: 10rem;
 }
 
 header ul li {
@@ -34,14 +34,14 @@ header ul li a {
     text-decoration: none;
     color: #fff;
     /* position: relative; */
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 header button {
     height: 7vh;
     width: 22vw;
     align-self: center;
-    margin-right: 20rem;
+    margin-right: 15rem;
     border: none;
     border-radius: 20px;
 }
@@ -64,10 +64,14 @@ header button {
 }
 
 img {
+    position: relative;
+    left: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 3rem;
     flex-grow: 1;
     height: 70vh;
-    width: 35vw;
+    width: 36vw;
 }
 
 .box1 {
