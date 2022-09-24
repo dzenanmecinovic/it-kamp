@@ -1,0 +1,27 @@
+/* * { 
+    box-sizing: border-box;
+} */
+
+.parent {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #deb887;
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    background-color: #0000ff;
+    transition: 3s;
+    transition-timing-function:ease-in-out;
+    /* transition-property: transform 5s; na sta se odonsi */
+    /* transition-duration: 0.5s; */
+    /* transition-timing-function: ; Nacin na koji se izvrsava funkcija */
+    /* transition-delay: 1s; Nakon koliko vremena se izvrsava transformacija */
+}
+
+.parent:hover .child {
+    transform: translateX(250px) translateY(250px);
+    background-color: aqua;
+}

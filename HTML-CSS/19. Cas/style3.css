@@ -1,0 +1,46 @@
+/* * { 
+    box-sizing: border-box;
+} */
+
+.parent {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #deb887;
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    background-color: #0000ff;
+}
+
+.parent:hover .child {
+    animation: top-to-bottom 3s ease-in-out both infinite alternate;
+    /* animation-name: top-to-bottom; Ime animacije */
+    /* animation-duration: .999ms; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: alternate; */
+    /* animation-iteration-count: 3; */
+}
+
+    @keyframes top-to-bottom {
+        0% {
+            transform: translateY(0%);
+        }
+
+        33% {
+            transform: translateX(250px);
+            background-color: burlywood;
+        }
+
+        66% {
+            transform: translateX(250px) translateY(250px);
+            background-color: burlywood;   
+        }
+
+        100% {
+            transform: translateY(250px);
+        }
+    }
