@@ -4,7 +4,7 @@
 }
 
 .okvir {
-    width: 100vw;
+    width: 99vw;
     height: 130vh;
     background-color: #6255a5;
 }
@@ -13,7 +13,7 @@ header {
     /* filter: opacity(0%); */
     position: relative;
     top: 2.5vh;
-    width: 97%;
+    width: 95%;
     height: 10vh;
     margin: auto;
     background-color: white;
@@ -82,8 +82,8 @@ header button {
 .main {
     display: flex;
     margin: auto;
-    height: 130vh;
-    width: 97%;
+    height: 117vh;
+    width: 95%;
     background-color: #f6f6f6;
     /* border: .1px solid black; */
     -webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
@@ -262,16 +262,17 @@ img {
     position: relative;
     bottom: 38rem;
     right: 20pc;
+    margin-top: 20px;
 }
 
-@media all and (max-height: 800px) {
+@media all and (max-height: 970px) {
     * {
         margin: 0;
         box-sizing: border-box;
     }
     
     .okvir {
-        width: 100vw;
+        width: 98.9vw;
         height: 130vh;
         background-color: #6255a5;
     }
@@ -280,7 +281,7 @@ img {
         /* filter: opacity(0%); */
         position: relative;
         top: 2.5vh;
-        width: 97%;
+        width: 95%;
         height: 10vh;
         margin: auto;
         background-color: white;
@@ -350,7 +351,7 @@ img {
         display: flex;
         margin: auto;
         height: 100vh;
-        width: 97%;
+        width: 95%;
         background-color: #f6f6f6;
         /* border: .1px solid black; */
         -webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
@@ -377,7 +378,7 @@ img {
     .main .left h3 {
         padding-top: 25vh;
         padding-left: 5.2vw;
-        color: green;
+        color: red;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
