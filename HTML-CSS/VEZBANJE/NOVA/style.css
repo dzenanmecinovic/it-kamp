@@ -38,9 +38,10 @@
 
 .prvi-deo p {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
     left: 11rem;
-    width: 20px;
+    width: 20vw;
     height: 100px;
     color: white;
 }
