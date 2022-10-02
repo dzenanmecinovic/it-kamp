@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* 1b3045 backgr*/
+/* 56b8e7 button */
+
+.both {
+    display: flex;
+}
+
+.prvi-deo {
+    /* display: flex; */
+    width: 40vw;
+    height: 100vh;
+    background-color: #1b3045;
+    /* display: inline-block; */
+    /* position: fixed; */
+}
+
+.prvi-deo h1 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 1.5rem;
+    left: 10.3rem;
+}
+
+.prvi-deo .veci {
+    font-weight: bolder;
+    position: relative;
+    font-size: 45px;
+    margin-top: 15rem;
+    left: 10.3rem;
+}
+
+.prvi-deo p {
+    position: relative;
+    margin-top: 3rem;
+    left: 11rem;
+    width: 20px;
+    height: 100px;
+    color: white;
+}
+
+.prvi-deo #prvi {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    top: .5rem;
+    left: 10rem;
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px transparent;
+    background-color: #56b8e7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.prvi-deo #ikonica {
+    position: relative;
+    top: 17px;
+    right: 20px;
+    margin-left: 200px;
+    font-size: 30px;
+    color: #56b8e7;
+    font-size: 40px;
+}
+
+.prvi-deo a {
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+
+aside {
+    /* display: flex; */
+    /* position: relative; */
+    /* bottom: 100vh; */
+    left: 42rem;
+    width: 59.1vw;
+    height: 100vh;
+    background-color: rgb(27, 48, 69);
+    /* z-index: 1; */
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(27, 48, 69); */
+}
+
+aside ul {
+    position: relative;
+    top: 40px;
+    list-style: none;
+    display: flex;
+
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    position: relative;
+    left: 120px;
+    bottom: 915px;
+    font-weight: bolder;
+    text-shadow: rgba(0,0,0,1) 0px 0px 8px;
+}
+
+.second {
+    height: 75vh;
+    width: 100%;
+}
+
+.second h2 {
+    margin-top: 6rem;
+    text-align: center;
+    height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+.poster {
+    margin: 30px auto;
+    height: 65vh;
+    width: 80vw;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+}
+
+.poster .img img{
+    height: 65vh;
+    width: 35vw;
+}
+
+.poster .text {
+    height: 65vh;
+    width: 45vw;
+    text-align: center;
+}
+
+.poster .text h3 {
+    margin-top: 20%;
+    font-size: 27px;
+    color: #1d3348;
+}
+
+.poster .text h4 {
+    font-size: 15px;
+    padding-top: 20px;
+    width: 35.9vw;
+    padding-left: 163px;
+    font-weight: normal;
+    color: #336a9e;
+}
+
+.poster .text p {
+    text-align: center;
+    text-align: justify;
+    padding-top: 4rem;
+    padding-left: 163px;
+    width: 35.9vw;
+}
+
+.poster .text h1 {
+    text-align: center;
+    /* padding-top: 1rem; */
+    font-size: 55px;
+}
+
+.poster .text span {
+    color: lightblue;
+}
+
+.third {
+    margin: auto;
+    height: 77vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.third .text h3 {
+    padding-top: 3rem;
+    text-align: center;
+    height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+.boxes {
+    display: grid;
+    height: 600px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 400px 400px 400px;
+    /* width: 800px; */
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.boxes .box1 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: aqua; */
+}
+
+.boxes .box2 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: rgb(211, 31, 235);  */
+}
+
+.boxes .box3 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: red; */
+}
+
+.boxes .box4 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: yellow; */
+}
+
+.boxes .box5 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: yellowgreen; */
+}
+
+.boxes .box6 {
+    width: 410px;
+    /* height: 200px; */
+    /* background-color: sienna;  */
+}
+
+/* 1 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box1 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box1 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}
+
+/* 2 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box2 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box2 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}
+
+/* 3 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box3 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box3 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}
+
+/* 4 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box4 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box4 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}
+
+/* 5 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box5 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box5 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}
+
+/* 6 */
+
+#kofer {
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+    color: orangered;
+}
+
+.boxes .box6 span {
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.boxes .box6 p {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    width: 339px;
+}

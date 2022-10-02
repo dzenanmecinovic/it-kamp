@@ -9,59 +9,62 @@
     /* height: 90vh; */
     background-color: #7fffd4;
     display: grid;
-    /* grid-template-columns: 150px 150px; */
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px;
     /* Dve vrednosti predstavljaju da imamo dve kolone */
     /* grid-template-columns: 1fr 2fr 1fr; */
     /* Slicno flex-grow gde se redjaju elmenti tako sto ce popuniti celu sirinu parenta */
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     
     /* grid-template-rows: 200px 100px; */
     /* Svaka vrednost predstavlja visinu elemenata za taj red */
     /* grid-auto-rows: 200px; */
     /* Predstavlja visinu svih redova */
-    grid-auto-rows: minmax(150px, auto);
+    /* grid-auto-rows: minmax(150px, auto); */
 
     /* grid-gap: 15px; */
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
+    /* grid-column-gap: 15px; */
+    /* grid-row-gap: 10px; */
 
 }
 
 .box1 {
     /* height: 150px; */
     background-color: #deb887;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
 }
+
+
 
 .box2 {
     /* height: 150px; */
     background-color: red;
-    grid-column-start: 3;
+    /* grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 3; */
 }
 
 .box3 {
     /* height: 150px; */
     background-color:violet;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
 }
 
 .box4 {
     /* height: 150px; */
     background-color:rgb(49, 88, 26);
     /* grid-column: 1/4; Jos jedan nacin zapisivanja preko grid-column svojstva*/
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
 }
 
 .box5 {
     /* height: 150px; */
     background-color:rgb(116, 32, 32) ;
     color: white;
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 
 .box6 {
