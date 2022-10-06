@@ -518,7 +518,7 @@ aside ul li a {
 .sivi-deo {
     margin-top: -5rem;
     height: 45vh;
-    background-color: #f8f9fd;
+    background-color: #ebebeb;
 }
 
 .sivi-deo h1 {
@@ -562,7 +562,7 @@ aside ul li a {
 
 .blog {
     margin: 30px auto;
-    height: 70vh;
+    height: 77vh;
     /* display: flex; */
 }
 
@@ -575,28 +575,88 @@ aside ul li a {
     margin-bottom: 3rem;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 25px;
+}
 
+/* img settings */
 
 .flex .primer1 img {
     /* margin: auto; */
-    height: 25vh;
-    width: 15vw;
+    height: 27vh;
+    width: 17vw;
 }
 
 .flex .primer2 img {
     /* margin: auto; */
-    height: 25vh;
-    width: 15vw;
+    height: 27vh;
+    width: 17vw;
 }
 
 .flex .primer3 img {
     /* margin: auto; */
-    height: 25vh;
-    width: 15vw;
+    height: 27vh;
+    width: 17vw;
 }
 
 .flex .primer4 img {
     /* margin: auto; */
-    height: 25vh;
-    width: 15vw;
+    height: 27vh;
+    width: 17vw;
+}
+
+/* <p> settings */
+#sivi {
+    color: #858585;
+}
+
+.flex .primer1 p {
+    padding-top: 8px;
+}
+
+.flex .primer2 p {
+    padding-top: 8px;
+}
+
+.flex .primer3 p {
+    padding-top: 8px;
+}
+
+.flex .primer4 p {
+    padding-top: 8px;
+}
+
+/* <a> settings */
+
+.flex .primer1 a {
+    text-decoration: none;
+    color: #56b8e7;
+    font-weight: 500;
+}
+
+.flex .primer2 a {
+    text-decoration: none;
+    color: #56b8e7;
+    font-weight: 500;
+}
+
+.flex .primer3 a {
+    text-decoration: none;
+    color: #56b8e7;
+    font-weight: 500;
+}
+
+.flex .primer4 a {
+    text-decoration: none;
+    color: #56b8e7;
+    font-weight: 500;
+}
+
+.footer {
+    height: 40vh;
+    width: 99vw;
+    background-color: #ebebeb ;
 }
