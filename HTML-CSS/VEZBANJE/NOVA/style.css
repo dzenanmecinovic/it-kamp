@@ -8,6 +8,7 @@
 /* 56b8e7 button */
 
 .both {
+    /* width: 100vw; */
     display: flex;
 }
 
@@ -98,7 +99,7 @@ aside {
     /* position: relative; */
     /* bottom: 100vh; */
     left: 42rem;
-    width: 59.1vw;
+    width: 60vw;
     height: 100vh;
     background-color: rgb(27, 48, 69);
     /* z-index: 1; */
@@ -439,7 +440,7 @@ aside ul li a {
 
 .wide img {
     height: 50vh;
-    width: 100.1%;
+    width: 100%;
     background-size: 100% 100%;
 }
 
@@ -560,6 +561,42 @@ aside ul li a {
 }
 
 .blog {
-    /* margin-top: 2rem; */
+    margin: 30px auto;
     height: 70vh;
+    /* display: flex; */
+}
+
+.blog h1 {
+    padding-top: 3rem;
+    text-align: center;
+    height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+
+
+.flex .primer1 img {
+    /* margin: auto; */
+    height: 25vh;
+    width: 15vw;
+}
+
+.flex .primer2 img {
+    /* margin: auto; */
+    height: 25vh;
+    width: 15vw;
+}
+
+.flex .primer3 img {
+    /* margin: auto; */
+    height: 25vh;
+    width: 15vw;
+}
+
+.flex .primer4 img {
+    /* margin: auto; */
+    height: 25vh;
+    width: 15vw;
 }
