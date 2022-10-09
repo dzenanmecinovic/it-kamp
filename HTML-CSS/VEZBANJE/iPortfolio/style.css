@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Boje */
+/* Levi deo 040b15 */
+/* Levi deo - Home 1d99bb */
+/* Levi deo - Text i Ikonice 2f3035 */
+/* Naslovi 153f6f */
+/* h3 iznad informacija 153f6f (za nijansu svetliji) */
+/* Button 139ddc */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    /* height: 200vh; */
+}
+
+.fixed {
+    width: 18vw;
+    height: 100vh;
+    background-color: #040b15 ;
+    position: fixed;
+}
+
+.fixed h2 {
+    color: #fff;
+    padding-left: 2.5rem;
+    padding-top: .4rem;
+}
+
+.fixed img {
+    height: 13vh;
+    width: 8vw;
+    border-radius: 200px;
+    margin-top: 1.8rem;
+    margin-left: 4.5rem;
+}
+
+.fixed a {
+    padding-left: .3rem;
+}
+
+#twitter {
+    color: white;
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #2f3035;
+}
+
+#twitter:hover {
+    background-color: #1d99bb;
+    transition-duration: .5s;
+}
+
+#facebook {
+    width: 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #2f3035;
+}
+
+#facebook:hover {
+    background-color: #1d99bb;
+    transition-duration: .5s;
+}
+
+#instagram {
+    color: white;
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #2f3035;
+}
+
+#instagram:hover {
+    background-color: #1d99bb;
+    transition-duration: .5s;
+}
+
+#skype {
+    color: white;
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #2f3035;  
+}
+
+#skype:hover {
+    background-color: #1d99bb;
+    transition-duration: .5s;
+}
+
+#linkedin {
+    color: white;
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #2f3035;  
+}
+
+#linkedin:hover {
+    background-color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.ikonice {
+    margin-top: .8rem;
+    margin-left: 2.2rem;
+    /* padding-left: .5rem; */
+}
+
+.fixed ul li {
+    list-style: none;
+    margin-top: 2rem;
+    position: relative;
+    top: 2rem;
+}
+
+.fixed ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #7e7e80;
+    padding-left: .7rem;
+    position: relative;
+    bottom: 2px;
+}
+
+/* List text margin */
+
+.fixed #prvi:hover {
+    color: #fff;
+}
+
+.fixed #drugi {
+    margin-left: 6px;
+}
+
+.fixed #drugi:hover {
+    color: #fff;
+}
+
+.fixed #treci {
+    margin-left: 2px;
+}
+
+.fixed #treci:hover {
+    color: #fff;
+}
+
+.fixed #cetvrti {
+    margin-left: -.3rem;
+}
+
+.fixed #cetvrti:hover {
+    color: #fff;
+}
+
+.fixed #peti:hover {
+    color: #ffff;
+}
+
+.fixed #sesti:hover {
+    color: #fff;
+}
+
+/*  */
+
+.fixed #home {
+    color: #1d99bb;
+    font-size: 25px;
+}
+
+.fixed #about {
+    color: #2f3035;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fixed #about:hover {
+    color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.fixed #resume {
+    color: #2f3035;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fixed #resume:hover {
+    color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.fixed #portfolio {
+    color: #2f3035;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fixed #portfolio:hover {
+    color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.fixed #services {
+    color: #2f3035;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fixed #services:hover {
+    color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.fixed #contact {
+    color: #2f3035;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fixed #contact:hover {
+    color: #1d99bb;
+    transition-duration: .5s;
+}
+
+.fixed p {
+    font-size: 15px;
+    text-align-last:center;
+    color: #fff;
+    position: relative;
+    top: 17.2rem;
+    left: -.23rem;
+    padding-top: 10px;
+}
+
+.fixed .mention {
+    color: #1d99bb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .fixed */
+/*  DONE */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
