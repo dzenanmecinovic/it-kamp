@@ -235,7 +235,7 @@ body {
     text-align-last:center;
     color: #fff;
     position: relative;
-    top: 5.5rem;
+    top: 17.2rem;
     left: -.23rem;
     padding-top: 10px;
 }
@@ -253,4 +253,10 @@ body {
     width: 100vw;
     height: 100vh;
     /* background-color: aqua; */
+}
+
+@media all and (min-width: 1300px) {
+    .fixed p {
+        top: 5.5rem;;
+    }
 }
