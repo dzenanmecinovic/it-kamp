@@ -250,9 +250,46 @@ body {
 /*  DONE */
 
 .main {
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     /* background-color: aqua; */
+}
+
+#pozadina {
+    width: 98.9vw;
+    height: 100vh;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    padding-left: 19%;
+}
+
+.about h2 {
+    color: #0e4272;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about p {
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex img {
+    height: 60vh;
+    width: 25vw;
+    padding-top: 15px;
+}
+
+.flex .podaci {
+    height: 60vh;
 }
 
 @media all and (min-width: 1300px) {
