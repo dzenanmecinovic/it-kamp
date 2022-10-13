@@ -2,7 +2,8 @@ document.getElementById('paragraf').innerHTML = 'Ovo je paragraf koji je unet na
 
 paragraf = document.getElementById('paragraf');
 
-paragraf.style.backgroundColor = 'red';
+paragraf.style.color = 'aqua';
+paragraf.style.backgroundColor = 'black';
 
 console.log('Ovo je nas prvi ispis u konzoli');
 
