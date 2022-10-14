@@ -64,5 +64,5 @@ prom1 = 54; // inicijalizacija (dodela vredonsti) promenljive
 
 console.log(typeof s);
 
-let ez = 22323232;
+let ez = 232323;
 console.log(ez);
