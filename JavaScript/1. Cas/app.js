@@ -62,4 +62,7 @@ prom1 = 54; // inicijalizacija (dodela vredonsti) promenljive
 // nekorektnu vrednost.
 
 
-console.log(typeof skola);
+console.log(typeof s);
+
+let ez = 22323232;
+console.log(ez);
