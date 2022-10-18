@@ -60,3 +60,5 @@ console.log(z)
 // vaze i za promenljive definisane putem const keyword
 
 // const cars = ["Audi", "Golf", "BMW", "Mercedes", "Nissan"]
+// console.log(cars)
+// console.log(typeof cars)
