@@ -65,7 +65,6 @@ skola = null;
 console.log(skola)
 console.log(typeof skola); // rezultat je Object
 
-<<<<<<< HEAD
 // 7. Symbol - Novi tip podatka u JavaScriptu koji se koristi za dodeljivanje jedinstvene ili anonimne vrednosti.
 
 x = Symbol("Danas je lepo vreme");
@@ -136,9 +135,3 @@ map1 = new Map([
 ])
 
 console.log(map1)
-=======
-console.log(typeof s);
-
-let ez = 232323;
-console.log(ez);
->>>>>>> d95dafaf2f0913c623692d698f0d542e8e22b721
