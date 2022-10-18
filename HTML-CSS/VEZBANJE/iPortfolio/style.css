@@ -261,7 +261,7 @@ body {
 }
 
 .about {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     padding-left: 19%;
 }
@@ -290,6 +290,32 @@ body {
 
 .flex .podaci {
     height: 60vh;
+    width: 100vw;
+    padding-left: 15px;
+}
+
+.flex .podaci .boxes {
+    padding-top: 20px;
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 2fr 2fr;
+}
+
+.flex .podaci .boxes p {
+    position: relative;
+    bottom: 25px;
+    left: 22px;
+    font-weight: 500;
+}
+
+#plava {
+    color: #1d99bb;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#podebljani {
+    font-weight: 900;
 }
 
 @media all and (min-width: 1300px) {
