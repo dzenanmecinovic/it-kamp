@@ -150,6 +150,7 @@ body {
 
 .fixed #treci:hover {
     color: #fff;
+    transition-duration: .5s;
 }
 
 .fixed #cetvrti {
@@ -498,6 +499,16 @@ font-weight: bold;
     padding-bottom: 2rem;
     font-size: 32px;
     font-weight: bold;
+}
+
+.resume h3 {
+    padding-top: 2.5rem;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#sirina {
+    width: 97%;
 }
 
 @media all and (min-width: 1300px) {
