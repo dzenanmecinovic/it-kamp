@@ -181,3 +181,21 @@ console.log("Nasli smo bar jednu pozitivnu promenljivu") : console.log("Sve prom
 // 5.3. ! - not okrece vrednost => iz true u false i obrnuto
 
 console.log(!Boolean(prviDeo + " " + drugiDeo))
+
+
+// 6. Tip operatori (Type operators)
+
+// 6.1. typeof se koristi za ispitivanje tipa odredjene promenljive.
+
+isSunny = false
+console.log(typeof isSunny)
+
+// 6.2. instanceof za proveru da li je neka promenljiva instanca objekat
+
+const obj = {
+    ime: "Omar",
+    prezime: "Semsovic",
+}
+
+console.log(obj instanceof Object);
+console.log(obj instanceof Number);
