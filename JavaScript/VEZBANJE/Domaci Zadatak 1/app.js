@@ -17,7 +17,7 @@ let prvi = +prompt("Unesite prvi broj:")
 let drugi = +prompt("Unesite drugi broj:")
 
 
-if (prvi == drugi) {
+if (prvi === drugi) {
     console.log("Povrsina kvadrata je:" + (prvi * drugi) + "m²")
 } else if (prvi < 0) {
     console.log("Broj ne sme biti manje od 0")
