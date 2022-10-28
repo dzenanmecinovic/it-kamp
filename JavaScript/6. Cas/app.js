@@ -64,26 +64,35 @@
 
 // I nacin
 
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 1) {
-        continue;
-    } else {
-        console.log(i)
-    }
-}
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 === 1) {
+//         continue;
+//     } else {
+//         console.log(i)
+//     }
+// }
 
 // II nacin
 
-for (let broj = 2; broj <= 20; broj += 2) {
-    console.log(broj)
-}
+// for (let broj = 2; broj <= 20; broj += 2) {
+//     console.log(broj)
+// }
 
 // Domaci
 // 1.
 // Ispisati neparne brojeve od 1 do 20 na dva nacina.
 // 2.
-// Ispisati sve brojeve od 50 do 100 koji su dejivi sa 5.
+// Ispisati sve brojeve od 50 do 100 koji su deljivi sa 5.
 // 3.
 // Ispisati dvostruku vrednost prirodnih brojeva od 6 do 14.
 // 4.
 // Suma neparnih prirodnih brojeva od 10 do 20.
+
+
+
+for (let i = 50; i <= 100; i += 5) {
+    // if (i % 5 === 1 && i % 2 === 1 ) {
+    //     continue;
+    // }
+    console.log(i)
+}
