@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+    background-size: 350% 350%;
+}
+
+.skripta {
+    padding-top: 19%;
+    text-align: center;
+    font-size: 100px;
+}
