@@ -52,13 +52,13 @@
 
 // ispisati sve brojeve od 1 do 10. ako je neki broj deljiv sa 7 neka se prekine petlja.
 
-// for (let i = 1; i < 11; i++) {
-//     if (i % 7 === 0) {
-//         break;
-//     } else {
-//         console.log(i)
-//     }
-// }
+for (let i = 1; i < 11; i++) {
+    if (i % 7 === 0) {
+        break;
+    } else {
+        console.log(i)
+    }
+}
 
 // Ispisati parne brojeve od 1 do 20 na dva nacina.
 
