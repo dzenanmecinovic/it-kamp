@@ -85,10 +85,33 @@
 
 // Domaci zadatak:
 // Preko switch naredbe:
-console.log(new Date().getDay())
+// console.log(new Date().getDay())
 // getDay() - daje vrednost od 0 do 6
 // switch (new Date().getDay())....
 // Na osnovu vrednosti koju nam daje izraz iz switch naredbe,
 // kroz case-ove i eventualno default ispisati poruku:
 // "Danas je 'radni dan'."
 // "Ugodno provedite vikend"
+
+switch (new Date().getDay()) {
+        case 1:
+        console.log("Danas je radni dan")
+    break;
+        case 2:
+        console.log("Danas je radni dan")
+    break;
+        case 3:
+        console.log("Danas je radni dan")
+    break;
+        case 4:
+        console.log("Danas je radni dan")
+    break;
+        case 5:
+        console.log("Danas je radni dan")
+    break;
+        case 6:
+        console.log("Danas je vikend")
+    break;
+        case 0:
+        console.log("Danas je vikend")
+}
