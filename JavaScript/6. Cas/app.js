@@ -23,16 +23,16 @@
 // statement2 predstavlja uslov (granicu) do koje vrednosti ce iterator da ide
 // statement3 predstavlja povecanje ili smanjenje koje se desi na kraju svake iteracije
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(i)
-// }
+for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
 
 // I Nacin
-// for (let i = 1; i < 11; i++) {
-//     if (i !== 2 && i !== 5) {
-//         console.log(i)
-//     }
-// }
+for (let i = 1; i < 11; i++) {
+    if (i !== 2 && i !== 5) {
+        console.log(i)
+    }
+}
 
 
 // continue keyword (rezervisana rec) ako se nadje u nekoj iteraciji, zapravo oznacava
@@ -40,13 +40,13 @@
 
 // II Nacin
 
-// for (let i = 1; i < 11; i++) {
-//     if (i === 2 || i === 5) {
-//         continue;
-//     } else {
-//         console.log(i)
-//     }
-// }
+for (let i = 1; i < 11; i++) {
+    if (i === 2 || i === 5) {
+        continue;
+    } else {
+        console.log(i)
+    }
+}
 
 // break keyword (rezervisana rec) predstavlja da od tog trenutka for petlja prestaje sa radom.
 
@@ -64,19 +64,19 @@ for (let i = 1; i < 11; i++) {
 
 // I nacin
 
-// for (let i = 1; i <= 20; i++) {
-//     if (i % 2 === 1) {
-//         continue;
-//     } else {
-//         console.log(i)
-//     }
-// }
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 1) {
+        continue;
+    } else {
+        console.log(i)
+    }
+}
 
 // II nacin
 
-// for (let broj = 2; broj <= 20; broj += 2) {
-//     console.log(broj)
-// }
+for (let broj = 2; broj <= 20; broj += 2) {
+    console.log(broj)
+}
 
 // Domaci
 // 1.
@@ -91,8 +91,5 @@ for (let i = 1; i < 11; i++) {
 
 
 for (let i = 50; i <= 100; i += 5) {
-    // if (i % 5 === 1 && i % 2 === 1 ) {
-    //     continue;
-    // }
     console.log(i)
 }
