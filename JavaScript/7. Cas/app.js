@@ -36,25 +36,25 @@
 // od manjeg do veceg broja
 // Ispisuju se brojevi od manjeg do veceg
 
-let prviBroj = +prompt("Unesite prvi broj:")
-let drugiBroj = +prompt("Unesite drugi broj:")
+// let prviBroj = +prompt("Unesite prvi broj:")
+// let drugiBroj = +prompt("Unesite drugi broj:")
 
-if(prviBroj < 0 && drugiBroj < 0) {
-    console.log("Brojevi moraju biti veci od 0.")
-}
-let broj = prviBroj && drugiBroj
+// if(prviBroj < 0 && drugiBroj < 0) {
+//     console.log("Brojevi moraju biti veci od 0.")
+// }
+// let broj = prviBroj && drugiBroj
 
-while(prviBroj < drugiBroj) {
-    console.log(broj)
-    broj++
-}
+// while(prviBroj < drugiBroj) {
+//     console.log(broj)
+//     broj++
+// }
 
-let broj1 = +prompt("Unesite prvi broj:")
-let broj2 = +prompt("Unesite drugi broj:")
+// let broj1 = +prompt("Unesite prvi broj:")
+// let broj2 = +prompt("Unesite drugi broj:")
 
-if (isNaN(broj1) || isNaN(broj2)) {
-    console.log("Brojevi moraju imati korektne vrednosti.")
-} else if ()
+// if (isNaN(broj1) || isNaN(broj2)) {
+//     console.log("Brojevi moraju imati korektne vrednosti.")
+// } else if ()
 
 
 // do while petlja predstavlja poseban slucaj while petlje
