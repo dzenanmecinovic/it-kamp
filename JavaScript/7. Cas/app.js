@@ -93,25 +93,25 @@ if (isNaN(broj1) || isNaN(broj2)) {
 // "Danas je 'radni dan'."
 // "Ugodno provedite vikend"
 
-// switch (new Date().getDay()) {
-//         case 1:
-//         console.log("Danas je radni dan")
-//     break;
-//         case 2:
-//         console.log("Danas je radni dan")
-//     break;
-//         case 3:
-//         console.log("Danas je radni dan")
-//     break;
-//         case 4:
-//         console.log("Danas je radni dan")
-//     break;
-//         case 5:
-//         console.log("Danas je radni dan")
-//     break;
-//         case 6:
-//         console.log("Danas je vikend")
-//     break;
-//         case 0:
-//         console.log("Danas je vikend")
-// }
+switch (new Date().getDay()) {
+        case 1:
+        console.log("Danas je radni dan")
+    break;
+        case 2:
+        console.log("Danas je radni dan")
+    break;
+        case 3:
+        console.log("Danas je radni dan")
+    break;
+        case 4:
+        console.log("Danas je radni dan")
+    break;
+        case 5:
+        console.log("Danas je radni dan")
+    break;
+        case 6:
+        console.log("Danas je vikend")
+    break;
+        case 0:
+        console.log("Danas je vikend")
+}
