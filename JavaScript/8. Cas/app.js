@@ -50,7 +50,7 @@ let sum = 0
 while(number < 18) {
     if(number % 3 === 0) {
     counter++;
-    sum += number;       
+    sum += number;
     }
     number++;
 }

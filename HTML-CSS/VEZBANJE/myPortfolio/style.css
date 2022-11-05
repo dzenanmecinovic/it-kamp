@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 /* Boje */
@@ -14,6 +15,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     /* height: 200vh; */
+    overflow-x: hidden;
 }
 
 /* Fixed */
