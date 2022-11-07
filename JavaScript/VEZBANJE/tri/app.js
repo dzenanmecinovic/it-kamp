@@ -1,4 +1,4 @@
-var igrica = "SAMP"
+let igrica = "SAMP"
 {
     let igrica = "LoL"
     console.log(igrica)
