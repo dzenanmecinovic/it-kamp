@@ -2,7 +2,7 @@
 
 // 1. Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo). Npr. za string 'Mama ima momu, dobija se rezultat 5.
 
-// 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
+
 
 const recenica = prompt("Unesite neku recenicu:")
 
@@ -16,8 +16,10 @@ for(let i = 0; i < recenica.length; i++) {
         counter++;
     }
     console.log("Broj slova M i m u recenici ima" + " " + counter);
-    }
+  }
 
+  // 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
+  
 const recenica2 = prompt("Unesite drugu recenicu:")
 
 let counter2 = 0;
