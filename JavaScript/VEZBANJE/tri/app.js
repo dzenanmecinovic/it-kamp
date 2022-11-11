@@ -1,7 +1,2 @@
-let igrica = "SAMP"
-{
-    let igrica = "LoL"
-    console.log(igrica)
-}
-
-console.log(igrica)
+let tekst = "Textie"
+console.log(typeof tekst)
