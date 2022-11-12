@@ -28,6 +28,7 @@ console.log(12 % 3); // 0
 
 // Uslov za neparnost:
 // i % 2 = 1
+// i % 2 != 0 - me
 
 // 1.7. ++ Increment (Povecava vrednost za 1)
 let x = 5;
@@ -36,7 +37,7 @@ x++ // x = x + 1
 console.log(x)
 
 let y = 11;
-y++
+++y
 // prefiksni operator
 console.log(y)
 
