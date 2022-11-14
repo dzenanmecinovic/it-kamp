@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        // var str = new String("Demo Text");
-        // document.write("Following is bigger text: "+str.big());
-        // let x = +prompt("Unesite neki pozitivan broj koji je manji od 100 hiljada")
-        //     if(x < 0) {
-        //         document.write("Broj mora biti veci od 0, a manji od 100 hiljada")
-        //     } else if(x >= 100000) {
-        //         document.write("Broj mora biti manji od 100 hiljada")
-        //     } else if (isNaN(x)) {
-        //         document.write("Uneta vrednost mora biti broj.")
-        //     } else {
-        //         document.write("Uneta vrednost je" + " " + x);
-        //     }
-        function resetFunkcija() {
-            document.getElementById(forma1).reset();
-        }
-    </script>
+
     <title>Forma</title>
 </head>
 <body>
-    <form id="forma1">
+    <!-- <form id="forma">
         Ime: <input type="text" name="ime">
         Prezime: <input type="text" name="prezime">
-        <input type="button" onclick="resetFunkcija()" value="Reset">
+        <input type="button" onclick="mojaFunkcija()" value="reset">
     </form>
+    <script>
+        function mojaFunkcija() {
+            document.getElementById("forma").reset();
+        }
+    </script> -->
+
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+    <form id="frm1" action="https://www.google.rs">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br><br>
+    <input type="submit">
+    </form>
+
+    <script>
+        function myFunction() {
+        document.getElementById("frm1").submit();
+        }
+    </script>
 </body>
 </html>

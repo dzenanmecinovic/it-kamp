@@ -63,3 +63,16 @@
 // for(i = 1; broj; i++) {
 //     console.log(i)
 // }
+
+        // var str = new String("Demo Text");
+        // document.write("Following is bigger text: "+str.big());
+        // let x = +prompt("Unesite neki pozitivan broj koji je manji od 100 hiljada")
+        //     if(x < 0) {
+        //         document.write("Broj mora biti veci od 0, a manji od 100 hiljada")
+        //     } else if(x >= 100000) {
+        //         document.write("Broj mora biti manji od 100 hiljada")
+        //     } else if (isNaN(x)) {
+        //         document.write("Uneta vrednost mora biti broj.")
+        //     } else {
+        //         document.write("Uneta vrednost je" + " " + x);
+        //     }
