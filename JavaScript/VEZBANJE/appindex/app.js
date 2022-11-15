@@ -76,3 +76,7 @@
         //     } else {
         //         document.write("Uneta vrednost je" + " " + x);
         //     }
+
+        const array1 = ['a', 'b', 'c'];
+        array1.forEach(element => console.log(element));
+        // console.log(array1)
