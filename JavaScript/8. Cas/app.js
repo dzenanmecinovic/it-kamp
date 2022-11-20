@@ -44,14 +44,14 @@ for(let i = 3; i <= 17; i++) {
 console.log(suma / brojac)
 
 
-let number = 3
-let counter = 0
-let sum = 0
-while(number < 18) {
-    if(number % 3 === 0) {
-    counter++;
-    sum += number;
-    }
-    number++;
-}
-console.log("Aritmeticka sredina deljivih brojeva sa 3, iz intervala [3, 17] je" + " " + sum/counter);
+// let number = 3
+// let counter = 0
+// let sum = 0
+// while(number < 18) {
+//     if(number % 3 === 0) {
+//     counter++;
+//     sum += number;
+//     }
+//     number++;
+// }
+// console.log("Aritmeticka sredina deljivih brojeva sa 3, iz intervala [3, 17] je" + " " + sum/counter);

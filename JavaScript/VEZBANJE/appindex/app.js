@@ -114,3 +114,51 @@
 // } else {
 //         console.log("Kolicnik je " + x/y);
 // }
+
+// Izracunati aritmeticku sredinu brojeva koji su deljivi sa 3.
+// Iteracija se vrsi od 3 do 17.
+
+// let counter = 0;
+// let sum = 0;
+// for(i = 3; i <= 17; i++) {
+//         if(i % 3 === 0) {
+//                 counter++
+//                 sum += i;
+//         }
+// }
+// console.log("Aritmeticka sredina brojeva u intervalu od 3 do 13 je" + " " + sum/counter)
+
+// let brojac = 0;
+// let suma = 0;
+
+// for(let i = 3; i <= 17; i++) {
+//     if(i % 3 === 0) {
+//         brojac++
+//         suma += i;
+//     }
+// }
+// console.log(suma / brojac)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 2.	(20) Napisati program koji ispisuje u konzoli brojeve od 1 do 100(ukljucujuci) tako da:
+
+// (i)	ako je broj deljiv sa 3, potrebno je ispisati ‘FIZZ’ umesto tog broja;
+// (ii)	ako je broj deljiv sa 5, potrebno je ispisati ‘BUZZ’ umesto tog broja;
+// (iii)	ako je broj deljiv i sa 3 i sa 5, potrebno je ispisati ‘FIZZ BUZZ’ umesto tog broja.
+
+for(i = 1; i <= 100; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+        console.log("FIZZ BUZ")
+        } 
+        else if(i % 3 === 0) {
+        console.log("FIZZ")
+        } 
+        else if(i % 5 === 0) {
+        console.log("BUZZ")
+        } 
+        else {
+            console.log(i)
+ }
+}
