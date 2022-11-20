@@ -77,6 +77,40 @@
         //         document.write("Uneta vrednost je" + " " + x);
         //     }
 
-        const array1 = ['a', 'b', 'c'];
-        array1.forEach(element => console.log(element));
+        // const array1 = ['a', 'b', 'c'];
+        // array1.forEach(element => console.log(element));
         // console.log(array1)
+
+// 1. Zadatak:
+// Napisati program na osnovu dva uneta od strane korisnika ispisuje:
+// Povrsinu kvadrata ako su uneti brojevi jednaki,
+// Povrsinu pravougaonika ako su uneti borjevi razliciti.
+
+// 2. Zadatak:
+// Korisnik unosi dva realna broja x i y. Napisati program koji izracunava i stampa
+// Kolicnik x/y, ako je broj y ralizcit od nule,
+// a inace ispisuje poruku: Deljenje nemoguce.
+
+// const x = +prompt("Unesite prvi pozitivan broj")
+// const y = +prompt("Unesite drugi pozitivan broj")
+
+// if(isNaN(x) || isNaN(y)) {
+//         console.log("Unete vrednosti moraju biti brojevi.")
+// } else if(x < 0 || y < 0) {
+//         console.log("Brojevi moraju biti pozitivni.")
+// } else if(x === y) {
+//         console.log("Povrsina kvadrata je " + x * y + " " + "kvadratnih metara.")
+// } else {
+//         console.log("Povrsina pravougaonika je" + " " + x * y + " " + "kvadratnih metara.")
+// }
+
+// const x = +prompt("Unesite prvi(x) broj")
+// const y = +prompt("Unesite drugi(y) broj")
+
+// if(isNaN(x) || isNaN(y)) {
+//         console.log("Unete vrednosti moraju biti brojevi.")
+// } else if(y === 0) {
+//         console.log("Deljenje nemoguce.")
+// } else {
+//         console.log("Kolicnik je " + x/y);
+// }
