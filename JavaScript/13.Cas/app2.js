@@ -124,27 +124,51 @@
 
 // let broj;
 // const vrednost = () => {
-//   const korisnik = +prompt("Unesite neku vrednost")
+//   const korisnik = +prompt("Unesite neku vrednost:")
 //   if(isNaN(korisnik)) {
-//     return "Uneta vrednost nije broj"
+//     return "Uneta vrednost nije broj."
 //   } else if(korisnik < 0) {
-//     return "Uneta vrednost je negativan broj"
+//     return "Uneta vrednost je negativan broj."
 //   } else if(korisnik === 0) {
-//     return "Uneta je nula"
+//     return "Uneta je nula."
 //   } else if(korisnik > 0) {
-//     return "Uneta vrednost je pozitivan broj"
+//     return "Uneta vrednost je pozitivan broj."
 //   }
 // }
 
 // console.log(vrednost())
 
-const mail = function(satnica, minutnica) {
+// const mail = function(satnica, minutnica) {
+//   if(satnica >= 9 && satnica < 17 && minutnica >= 0 && minutnica < 60) {
+//   return "Mejl je poslat u toku radnog vremena";
+// } else {
+//   return "Mejl nije poslat u toku radnog vremena";
+// };
+// };
+
+// console.log(mail(20, 12))
+// console.log(mail(14, 30))
+
+const mejl = function(satnica, minutnica) {
   if(satnica >= 9 && satnica < 17 && minutnica >= 0 && minutnica < 60) {
-  return "Mejl je poslat u toku radnog vremena";
+  return "Mejl je poslat u toku radnog vremena"
 } else {
-  return "Mejl nije poslat u toku radnog vremena";
-};
+  return "Mejl nije poslat u toku radnog vremena"
+}
 };
 
-console.log(mail(20, 12))
-console.log(mail(14, 30))
+console.log(mejl(10, 50))
+console.log(mejl(13, 59))
+console.log(mejl(8, 30))
+
+var slika1 = '<img src="bkgr1.jpg">';
+var slika2 = '<img src="bkgr2.jpg">';
+var datum = new Date(); /*danasnji datum*/
+function proveraisteka(datumisteka){
+var datisteka = new Date(datumisteka); /* datum isteka */
+if (datum.getTime() <= datisteka.getTime()) {
+document.write(slika1); }
+else {
+document.write(slika2);
+}
+}

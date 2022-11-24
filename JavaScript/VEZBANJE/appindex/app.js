@@ -148,17 +148,40 @@
 // (ii)	ako je broj deljiv sa 5, potrebno je ispisati ‘BUZZ’ umesto tog broja;
 // (iii)	ako je broj deljiv i sa 3 i sa 5, potrebno je ispisati ‘FIZZ BUZZ’ umesto tog broja.
 
-for(i = 1; i <= 100; i++) {
-        if(i % 3 === 0 && i % 5 === 0) {
-        console.log("FIZZ BUZ")
-        } 
-        else if(i % 3 === 0) {
-        console.log("FIZZ")
-        } 
-        else if(i % 5 === 0) {
-        console.log("BUZZ")
-        } 
-        else {
-            console.log(i)
- }
-}
+// for(i = 1; i <= 100; i++) {
+//         if(i % 3 === 0 && i % 5 === 0) {
+//         console.log("FIZZ BUZ")
+//         } 
+//         else if(i % 3 === 0) {
+//         console.log("FIZZ")
+//         } 
+//         else if(i % 5 === 0) {
+//         console.log("BUZZ")
+//         } 
+//         else {
+//             console.log(i)
+//  }
+// }
+
+// 1. Napišite JAVASCRIPT kôd koji će do datuma 31.12.2015. prikazivati na Web stranici sliku
+// bkgr1.jpg, a nakon tog datuma na istom mestu će se prikazivati slika bkgr2.jpg. To je korisno, ako,
+// na primer, radite sajt za neku firmu i ako ste sigurni da će ona do 31.12.2015. biti na lokaciji koju
+// prikazuje slika bkgr1.jpg, a nakon 31.12.2015. na lokaciji koju prikazuje bkgr2.jpg.
+// Slike kreirate sami.
+//  Ili ako kreirate sajt za npr. košarkaša XY koji je do datuma nosio dres kluba AB, a anon tog
+// datuma će nosti dres kluba CD.
+
+// var slika1 = '<img src="bkgr1.jpg">';
+// var slika2 = '<img src="bkgr2.jpg">';
+// var datum = new Date(("2022-11-24");); /*danasnji datum*/
+// function proveraisteka(datumisteka){
+// var datisteka = new Date(datumisteka); /* datum isteka */
+// if (datum.getTime() <= datisteka.getTime()) {
+// document.write(slika1); }
+// else {
+// document.write(slika2);
+// }
+// }
+
+
+console.log(new Date())
