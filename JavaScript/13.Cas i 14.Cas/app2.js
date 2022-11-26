@@ -171,4 +171,4 @@ document.write(slika1); }
 else {
 document.write(slika2);
 }
-}
+};
