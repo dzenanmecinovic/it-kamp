@@ -49,16 +49,33 @@ console.log(c)
 // Funkcija treba vratiti poruku:
 // argument + {njena duzina} + "nedovoljno za dalje ispitivanje".
 
-function zadatak() {
-    if(recenica[i] > 9) {
-        recenica2 = recenica.substr(, 10)
-        recenica2.replace("a", "B")
-    }
-    return "Ovo je novodobijena recenica:".concat(recenica2)
-    else {
-        return
+const mojaFunkcijaa = function(recenica) {
+    if(recenica.length > 9) {
+        let Pola;
+        if(recenica.length % 2 === 0) {
+            Pola = recenica.length / 2
+        } else if(recenica.length % 2 !== 0) {
+            Pola = Math.round(recenica.length / 2)
+        }
+        const polovina = recenica(Pola, recenica.length)
+        const izmena = polovina.replace(/a/g, "B")
+        const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
+        return konacna;
+    } else {
+        const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
+        return recenica2;
     }
 }
 
-// Domaci zadatak:
-// 
+console.log(mojaFunkcijaa("Kraj casa"))
+console.log(mojaFunkcijaa("Kraj casaaaaaaaaaaaaaaaaaaaaaaa"))
+
+// Domaci zadatak.
+// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
+//  datu recenicu u vise oblika (spojenu u jedan string).
+// 1. recenicu ispisanu velikim slovima,
+// 2. recenicu ispisanu malim slovima,
+// 3. pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
+// 4. Ako se u recenici nadje rec 'skola' neka bude zamenjena recju fakultet,
+// 5. Neka bude ispisano prvih 10 karaktera unete recenice,
+// 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.

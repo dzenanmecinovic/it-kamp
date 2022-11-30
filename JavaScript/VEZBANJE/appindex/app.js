@@ -185,3 +185,46 @@
 
 
 // console.log(new Date())
+
+// const mojaFunkcija = function(recenica) {
+//         if(recenica.length > 9) {
+//             let Pola;
+//             if(recenica.length % 2 === 0) {
+//                 Pola = recenica.length / 2
+//             } else if(recenica.length % 2 !== 0) {
+//                 Pola = Math.round(recenica.length / 2)
+//             }
+//             const isecak = recenica.slice(Pola, recenica.length)
+//             const Nova = isecak.replace(/a/g, "B")
+//             const konacna = "Ovo je novodobijena recenica".concat(" ", Nova)
+//             return konacna;
+//         } else {
+//             const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
+//             return recenica2;
+//         }
+//     }
+    
+//     console.log(mojaFunkcija("Kraj casa"))
+//     console.log(mojaFunkcija("Kraj caaasa je upravo sadaaaa."))
+
+
+    const mojaFunkcija = function(recenica) {
+        if(recenica.length > 9) {
+            let Pola;
+            if(recenica.length % 2 === 0) {
+                Pola = recenica.length / 2
+            } else if(recenica.length % 2 !== 0) {
+                Pola = Math.round(recenica.length / 2)
+            }
+            const polovina = recenica.slice(Pola, recenica.length)
+            const izmena = polovina.replace(/a/g, "B")
+            const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
+            return konacna;
+        } else {
+            const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
+            return recenica2;
+        }
+    }
+    
+    console.log(mojaFunkcija("Kraj casa"))
+    console.log(mojaFunkcija("Kraj casaaaa"))
