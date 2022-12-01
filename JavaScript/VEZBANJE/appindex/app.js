@@ -208,23 +208,53 @@
 //     console.log(mojaFunkcija("Kraj caaasa je upravo sadaaaa."))
 
 
-    const mojaFunkcija = function(recenica) {
-        if(recenica.length > 9) {
-            let Pola;
-            if(recenica.length % 2 === 0) {
-                Pola = recenica.length / 2
-            } else if(recenica.length % 2 !== 0) {
-                Pola = Math.round(recenica.length / 2)
-            }
-            const polovina = recenica.slice(Pola, recenica.length)
-            const izmena = polovina.replace(/a/g, "B")
-            const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
-            return konacna;
-        } else {
-            const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
-            return recenica2;
-        }
-    }
+    // const mojaFunkcija = function(recenica) {
+    //     if(recenica.length > 9) {
+    //         let Pola;
+    //         if(recenica.length % 2 === 0) {
+    //             Pola = recenica.length / 2
+    //         } else if(recenica.length % 2 !== 0) {
+    //             Pola = Math.round(recenica.length / 2)
+    //         }
+    //         const polovina = recenica.slice(Pola, recenica.length)
+    //         const izmena = polovina.replace(/a/g, "B")
+    //         const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
+    //         return konacna;
+    //     } else {
+    //         const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
+    //         return recenica2;
+    //     }
+    // }
     
-    console.log(mojaFunkcija("Kraj casa"))
-    console.log(mojaFunkcija("Kraj casaaaa"))
+    // console.log(mojaFunkcija("Kraj casa"))
+    // console.log(mojaFunkcija("Kraj casaaaa"))
+
+    // Domaci zadatak.
+// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
+//  datu recenicu u vise oblika (spojenu u jedan string).
+// 1. recenicu ispisanu velikim slovima,
+// 2. recenicu ispisanu malim slovima,
+// 3. pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
+// 4. Ako se u recenici nadje rec 'skola' neka bude zamenjena recju fakultet,
+// 5. Neka bude ispisano prvih 10 karaktera unete recenice,
+// 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
+
+const domaci = function() {
+    var uneta = prompt("Unesite recenicu")
+    uneta = uneta.replace(/skola/ig, "fakultet")
+    const velikim = uneta.toUpperCase();
+    const malim = uneta.toLowerCase();
+    let polaRecenice;
+    if(uneta.length % 2 === 0) {
+        polaRecenice = uneta / 2;
+    } else if(uneta.length % 2 !== 0) {
+        polaRecenice = Math.round(uneta / 2);
+    }
+    const polovina = uneta.concat(polaRecenice, uneta.length)
+    const polaPola = polovina.toUpperCase();
+    const prvihDeset = uneta.substr(0, 10)
+    const poslednjihDeset = uneta.slice(-10)
+    return uneta.concat(velikim, malim, polaPola, prvihDeset, poslednjihDeset)
+}
+
+console.log(domaci())
