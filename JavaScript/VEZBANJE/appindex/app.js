@@ -246,15 +246,18 @@ const domaci = function() {
     const malim = uneta.toLowerCase();
     let polaRecenice;
     if(uneta.length % 2 === 0) {
-        polaRecenice = uneta / 2;
+        polaRecenice = uneta.length / 2;
     } else if(uneta.length % 2 !== 0) {
-        polaRecenice = Math.round(uneta / 2);
+        polaRecenice = Math.round(uneta.length / 2);
     }
-    const polovina = uneta.concat(polaRecenice, uneta.length)
-    const polaPola = polovina.toUpperCase();
-    const prvihDeset = uneta.substr(0, 10)
-    const poslednjihDeset = uneta.slice(-10)
-    return uneta.concat(velikim, malim, polaPola, prvihDeset, poslednjihDeset)
+    const prvaPol = recenica.slice(0, polaRecenice).toUpperCase();
+    const drugaPol = recenica.substring(polaRecenice, recenica.length).toLowerCase();
+    const polaPola = prvaPol.concat(drugaPol);
+    const prvihDeset = uneta.substr(0, 10);
+    const poslednjihDeset = uneta.slice(-10);
+    return uneta.concat("\n", velikim,"\n", malim,"\n", polaPola,"\n", prvihDeset,"\n", poslednjihDeset);
 }
 
 console.log(domaci())
+
+// Izostavljajuci drugi argument kod slice() metode se uzima isecak do kraja stringa.
