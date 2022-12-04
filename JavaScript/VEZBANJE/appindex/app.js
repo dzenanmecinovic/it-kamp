@@ -228,7 +228,9 @@
     
     // console.log(mojaFunkcija("Kraj casa"))
     // console.log(mojaFunkcija("Kraj casaaaa"))
-
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
     // Domaci zadatak.
 // Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
 //  datu recenicu u vise oblika (spojenu u jedan string).
@@ -239,25 +241,67 @@
 // 5. Neka bude ispisano prvih 10 karaktera unete recenice,
 // 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
 
-const domaci = function() {
-    var uneta = prompt("Unesite recenicu")
-    uneta = uneta.replace(/skola/ig, "fakultet")
-    const velikim = uneta.toUpperCase();
-    const malim = uneta.toLowerCase();
-    let polaRecenice;
-    if(uneta.length % 2 === 0) {
-        polaRecenice = uneta.length / 2;
-    } else if(uneta.length % 2 !== 0) {
-        polaRecenice = Math.round(uneta.length / 2);
-    }
-    const prvaPol = recenica.slice(0, polaRecenice).toUpperCase();
-    const drugaPol = recenica.substring(polaRecenice, recenica.length).toLowerCase();
-    const polaPola = prvaPol.concat(drugaPol);
-    const prvihDeset = uneta.substr(0, 10);
-    const poslednjihDeset = uneta.slice(-10);
-    return uneta.concat("\n", velikim,"\n", malim,"\n", polaPola,"\n", prvihDeset,"\n", poslednjihDeset);
-}
+// const domaci = function() {
+//     var uneta = prompt("Unesite recenicu")
+//     uneta = uneta.replace(/skola/ig, "fakultet")
+//     const velikim = uneta.toUpperCase();
+//     const malim = uneta.toLowerCase();
+//     let polaRecenice;
+//     if(uneta.length % 2 === 0) {
+//         polaRecenice = uneta.length / 2;
+//     } else if(uneta.length % 2 !== 0) {
+//         polaRecenice = Math.round(uneta.length / 2);
+//     }
+//     const prvaPol = recenica.slice(0, polaRecenice).toUpperCase();
+//     const drugaPol = recenica.substring(polaRecenice, recenica.length).toLowerCase();
+//     const polaPola = prvaPol.concat(drugaPol);
+//     const prvihDeset = uneta.substr(0, 10);
+//     const poslednjihDeset = uneta.slice(-10);
+//     return uneta.concat("\n", velikim,"\n", malim,"\n", polaPola,"\n", prvihDeset,"\n", poslednjihDeset);
+// }
 
-console.log(domaci())
+// console.log(domaci())
 
 // Izostavljajuci drugi argument kod slice() metode se uzima isecak do kraja stringa.
+
+const domaci = () => {
+    const recenica = prompt("Unesite neku recenicu: ");
+    let polaDuzine;
+    //   if (recenica.length % 2 === 0) {
+    //     polaDuzine = recenica.length / 2;
+    //   } else {
+    //     polaDuzine = Math.round(recenica.length / 2);
+    //   }
+    polaDuzine =
+      recenica.length % 2 === 0
+        ? recenica.length / 2
+        : Math.round(recenica.length / 2);
+    const prva = recenica.toUpperCase();
+    const druga = recenica.toLowerCase();
+    const prvaPol = recenica.slice(0, polaDuzine).toUpperCase();
+    const drugaPol = recenica
+      .substring(polaDuzine, recenica.length)
+      .toLowerCase();
+    //   const treca = prvaPol + drugaPol;
+    const treca = prvaPol.concat(drugaPol);
+    const cetvrta = recenica.replace(/skola/gi, "fakultet");
+    const peta = recenica.substr(0, 10);
+    const sesta = recenica.slice(-10);
+    return prva.concat(
+      "\n",
+      druga,
+      "\n",
+      treca,
+      "\n",
+      cetvrta,
+      "\n",
+      peta,
+      "\n",
+      sesta
+    );
+  };
+  
+  // Izostavljajuci drugi argument kod slice() metode se uzima isecak do kraja stringa.
+  // const isecak = "Recenica za primenu slice metode jednim argumentom.".slice(12);
+  // console.log(isecak);
+  console.log(domaci());
