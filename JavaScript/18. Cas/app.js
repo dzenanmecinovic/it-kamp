@@ -3,7 +3,7 @@
 const recenica =
   "Ovde je prilicno hladno, ali smo dobili obecanje da ce uskoro poceti grejanje. Ako se to ne desi, bice odlaganja casova";
 
-// Ako se kod split metode izostavi argument dobicemo niz od jednog elementa
+/// Ako se kod split metode izostavi argument dobicemo niz od jednog elementa
 
 const niz = recenica.split();
 console.log(niz);
