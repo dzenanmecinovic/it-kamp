@@ -76,7 +76,6 @@ const zadatak2 = (recenica) => {
     } else if (recenica.startsWith("Automobil")) {
       return true;
     } else if (recenica.length % 2 === 0) {
-      let brojac = 0;
       if (recenica.includes("kuca")) {
         const kuce1 = recenica.match(/kuca/gi);
         let kucee = kuce1.length;
