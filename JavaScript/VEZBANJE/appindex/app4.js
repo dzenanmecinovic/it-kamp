@@ -33,3 +33,24 @@
 //    return mergedString;
 // };
 // console.log(mergeAlternatively(str1, str2));
+
+function kombinovani (str1, str2) {
+
+    var a = str1.split("");
+  
+    var b = str2.split("");
+  
+    var spojeniString = '';
+  
+  
+    for(var i = 0; i < a.length || i < b.length; i++) {
+     if(i < a.length)
+       spojeniString +=  a[i];
+     if(i < b.length)
+       spojeniString +=  b[i];
+    }
+  return spojeniString;
+  
+  }
+  console.log(kombinovani('treci tekst','drugi string'));
+  console.log(kombinovani('ab','def'));
