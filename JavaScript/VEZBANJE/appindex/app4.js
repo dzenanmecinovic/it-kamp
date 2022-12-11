@@ -54,3 +54,52 @@ function kombinovani (str1, str2) {
   }
   console.log(kombinovani('treci tekst','drugi string'));
   console.log(kombinovani('ab','def'));
+
+  function jeLiString(input) {
+    if (Object.prototype.toString.call(input) === '[object String]') {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+console.log(jeLiString("kako fols"))
+console.log(jeLiString([1, 2, 3, 4]))
+
+
+// ako nesto nije string, vrati: uneta vrednost nije string
+
+function nijeString(input) {
+  if(jeLiString(input) === false) {
+    return `Taj input: ${input}, nije string.`
+  } else {
+    return `Taj input: ${input}, jeste string.`
+  }
+}
+var covek = {
+  ime: "NVIDIA"
+}
+console.log(nijeString("input input"))
+console.log(nijeString([1, 2, 3]))
+console.log(nijeString(covek))
+
+function jeLiBlanko(input) {
+  // if(input.length === 0) { // this also works
+  if(input === "") {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(jeLiBlanko(''))
+console.log(jeLiBlanko("ee"))
+
+function svakaRecStringaUNiz(input) {
+  return input.split(" ")
+}
+function svakoSlovoStringaUNiz(input) {
+  return input.split("")
+}
+
+console.log(svakaRecStringaUNiz("Svaka rec ovog stringa je odvojena u novodobijenom nizu"))
+console.log(svakoSlovoStringaUNiz("Svaka rec ovog stringa je odvojena u novodobijenom nizu"))
