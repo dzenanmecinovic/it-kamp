@@ -120,4 +120,4 @@ function zastitaEmaila(email) {
     let prvi = prviDeo.substr(0, (prviDeo.length - pola))
     return prvi + "...@" + drugiDeo;
 }
-console.log(zastitaEmaila("mecinovicdz@gmail.com"))
+console.log(zastitaEmaila("mecinovicdz@gmail.com"));
