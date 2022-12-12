@@ -103,3 +103,59 @@ function svakoSlovoStringaUNiz(input) {
 
 console.log(svakaRecStringaUNiz("Svaka rec ovog stringa je odvojena u novodobijenom nizu"))
 console.log(svakoSlovoStringaUNiz("Svaka rec ovog stringa je odvojena u novodobijenom nizu"))
+
+function skracenaForma(input) {
+  // Ime P.
+  let podeljeni = input.split(" ")
+  let prviDeo = podeljeni[0];
+  let drugiDeo = podeljeni[1];
+  return prviDeo + ` ` + drugiDeo[0] + `.`;
+}
+
+console.log(skracenaForma("Dzenan Mecinovic"))
+console.log(skracenaForma("Amir Zornic"))
+console.log(skracenaForma("Fatih Lukarcanin"))
+console.log(skracenaForma("Amar Lukic"))
+
+function parametarizacija(input) {
+  // console.log(string_parameterize("Robin Singh from USA."));
+  // "robin-singh-from-usa"
+  let tekst = input.toLowerCase().replace(/[^a-zA-Z0-9 ]/, "").replace(/\s/g, "-");
+  return tekst;
+}
+
+console.log(parametarizacija("Dzenan Mecinovic iz srbije."));
+console.log(parametarizacija("John Kennedy from USA."));
+
+function prvoVeliko(input) {
+  // return input[0].toUpperCase() + input[];
+  let odvojeni = input.split("")
+  let prviVeliki = odvojeni[0].toUpperCase() + odvojeni.join("");
+  let konacni = prviVeliki.replace(input[0], "")
+  return konacni;
+}
+
+console.log(prvoVeliko("javascript"))
+console.log(prvoVeliko("python"))
+console.log(prvoVeliko("ceplusplus"))
+
+function novoVeliko(input) {
+  let prvoVeliko = input.charAt(0).toUpperCase() + input.slice(1);
+  let novoDobijeniString;
+  for(i = 0; i < prvoVeliko.length; i++) {
+    if(prvoVeliko[i - 1] === " ") {
+      novoDobijeniString += prvoVeliko[i].toUpperCase();
+    } else {
+      novoDobijeniString += prvoVeliko[i]
+    }
+  }
+  return novoDobijeniString;
+}
+
+console.log(novoVeliko("nova napravljena funkcija"))
+
+// function prvoVelikoINTERNET(input) {
+//     return input.charAt(0).toUpperCase() + input.slice(1);
+//   }
+      
+//    console.log(prvoVelikoINTERNET('js string exercises'));
