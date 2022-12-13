@@ -140,13 +140,16 @@ console.log(prvoVeliko("python"))
 console.log(prvoVeliko("ceplusplus"))
 
 function novoVeliko(input) {
-  let prvoVeliko = input.charAt(0).toUpperCase() + input.slice(1);
-  let novoDobijeniString;
-  for(i = 0; i < prvoVeliko.length; i++) {
-    if(prvoVeliko[i - 1] === " ") {
-      novoDobijeniString += prvoVeliko[i].toUpperCase();
+  // let prvi = input.charAt(0)
+  // let prvoVeliko = input[0].toUpperCase() + input.slice(1);
+  let novoDobijeniString = ""
+  for(i = 0; i < input.length; i++) {
+    if(input[i - 1] === " ") {
+      novoDobijeniString += input[i].toUpperCase();
+    } else if(i === 0) {
+      novoDobijeniString += input[i].toUpperCase();
     } else {
-      novoDobijeniString += prvoVeliko[i]
+      novoDobijeniString += input[i];
     }
   }
   return novoDobijeniString;
