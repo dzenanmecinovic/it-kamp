@@ -17,3 +17,5 @@ function domaci(broj) {
 }
 
 console.log(domaci(3456))
+console.log(domaci(1234))
+console.log(domaci(7895))
