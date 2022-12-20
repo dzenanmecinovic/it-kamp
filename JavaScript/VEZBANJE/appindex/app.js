@@ -319,22 +319,21 @@
 //    return maxChar;
 //  };
 
-//  console.log(getMax("na koju foru radi ova eeeeeeeeeeeee"))
+//  console.log(getMax("radil funkcijaaaaaa"))
 
 
-// function ponavljanjeKaraktera(string, brojPonavljanja) {
-// //   console.log(ponavljanjeKaraktera("abcddef", 2)) // [d]
-// //   console.log(ponavljanjeKaraktera("tfghhhplffzaaa", 3)) // [h, a]
-//     var brojPonavljanja = 0,
-//       maxChar = '';
-//    string.split('').forEach(function(char){
-//      if(string.split(char).length > brojPonavljanja) {
-//       brojPonavljanja = string.split(char).length;
-//          maxChar = char;
-//       }
-//    });
-//    return `${brojPonavljanja} karaktera imaju slova ${maxChar}`;
-//  };
+function ponavljanjeKaraktera(string, brojPonavljanja) {
+//   console.log(ponavljanjeKaraktera("abcddef", 2)) // [d]
+//   console.log(ponavljanjeKaraktera("tfghhhplffzaaa", 3)) // [h, a]
+    var brojPonavljanja = 0,
+      maxChar = '';
+   string.split('').forEach(function(char){
+     if(string.split(char).length > brojPonavljanja) {
+      brojPonavljanja = string.split(char).length;
+         maxChar = char;
+      }
+   });
+   return `${brojPonavljanja} karaktera imaju slova ${maxChar}`;
+ };
 
-//  console.log(ponavljanjeKaraktera("testiranje zzzzzzzzzzzzzadate funkcije"))
-// doesn't work.
+ console.log(ponavljanjeKaraktera("testiranje zzzzzzzzzzzzzadate funkcije"));
