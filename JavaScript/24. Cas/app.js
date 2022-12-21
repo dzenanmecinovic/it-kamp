@@ -3,7 +3,7 @@
 // toString() pretvara broj u string.
 // Ova metoda pretvara bilo koji tip podatka u string.
 
-// let x = 22;
+let x = 22;
 // console.log(x);
 // console.log(typeof x);
 // let y = x.toString();
@@ -13,34 +13,34 @@
 
 // toExponential() - nam vraca string broja, zaokruzen na onoliko decimala, koliki je argument metode.
 
-// let z = 55.4758;
-// let w = z.toExponential(2);
-// console.log(w);
-// console.log(typeof w);
+let z = 55.4758;
+let w = z.toExponential(2);
+console.log(w);
+console.log(typeof w);
 
 
-// let a = 12.1234;
-// let b = a.toExponential(3);
-// console.log(b);
-// console.log(typeof b);
+let a = 12.1234;
+let b = a.toExponential(3);
+console.log(b);
+console.log(typeof b);
 
 // toFixed() - vraca string broja, koji ce biti zaokruzen na onoliko decimala koliki je zapravo argument.
 
-// a = 12.334;
-// b = a.toFixed(2);
-// console.log(b);
-// console.log(typeof b);
+a = 12.334;
+b = a.toFixed(2);
+console.log(b);
+console.log(typeof b);
 
 // toPrecision() metoda vraca string broja, sa onoliko cifara koliki je argument funkcije.
 
-// a = 12.1232312312345;
-// b = a.toPrecision(6);
-// console.log(b);
-// console.log(typeof b);
+a = 12.1232312312345;
+b = a.toPrecision(6);
+console.log(b);
+console.log(typeof b);
 
 // valueOf() metoda vraca vrednost neke promenljive.
 
-// console.log(x.valueOf());
+console.log(x.valueOf());
 
 // Napomena.
 // toString() i valueOf() metode vaze za sve tipove podataka u JavaScriptu.
@@ -48,34 +48,34 @@
 // Napraviti funkciju koja prima jedan argument (broj) i vraca poruku da li je
 // dati argument palindrom.
 
-// function isPalindrom(broj) {
-//   const stringBroja = broj.toString();
-//   let obrnutiBroj = "";
-//   for (let i = stringBroja.length - 1; i >= 0; i--) {
-//     obrnutiBroj += stringBroja[i];
-//   }
-//   if (stringBroja === obrnutiBroj) {
-//     return `Dati broj jeste palindrom.`;
-//   } else {
-//     return `Dati broj nije palindrom.`;
-//   }
-// }
+function isPalindrom(broj) {
+  const stringBroja = broj.toString();
+  let obrnutiBroj = "";
+  for (let i = stringBroja.length - 1; i >= 0; i--) {
+    obrnutiBroj += stringBroja[i];
+  }
+  if (stringBroja === obrnutiBroj) {
+    return `Dati broj jeste palindrom.`;
+  } else {
+    return `Dati broj nije palindrom.`;
+  }
+}
 
 // console.log(isPalindrom("123"));
 // console.log(isPalindrom(12321));
 
 // 2. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
 
-// function izbrisiDruguCifru(broj) {
-//   const duzina = broj.toString().length;
-//   const stringBroja = broj.toString();
-//   if (duzina !== 3) {
-//     return `Argument mora imati 3 cifre.`;
-//   } else {
-//     const noviBroj = stringBroja.replace(stringBroja[1], "");
-//     return +noviBroj;
-//   }
-// }
+function izbrisiDruguCifru(broj) {
+  const duzina = broj.toString().length;
+  const stringBroja = broj.toString();
+  if (duzina !== 3) {
+    return `Argument mora imati 3 cifre.`;
+  } else {
+    const noviBroj = stringBroja.replace(stringBroja[1], "");
+    return +noviBroj;
+  }
+}
 
 // console.log(izbrisiDruguCifru(4566));
 // console.log(izbrisiDruguCifru(6));
@@ -117,7 +117,7 @@
 // Domaci zadatak:
 // Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kojem su zamenjene prva i treca cifra, kao i druga i cetvrta cifra.
 // 4752
-// 5247
+// 5247 
 
 // 2. parseInt() - analizira argument i vraca nam ceo broj ako je moguce.
 
@@ -134,7 +134,7 @@
 
 // console.log(parseInt("23,78")); // 23
 
-// console.log(parseInt("23.78")); // 23.78 (odstranjuje decimalni ostatak)
+// console.log(parseInt("23.78")); // 23 (odstranjuje decimalni ostatak)
 
 // console.log(parseInt("adf")); // NaN
 
@@ -148,28 +148,28 @@
 
 // 3. parseFloat() - analizira argument i vraca realni broj i za razliku od parseInt-a vraca i decimalni zapis u slucaju da uneti string sadrzi isti.
 
-console.log(parseFloat("23")); // 23
-console.log(typeof parseFloat("23")); //  number
+// console.log(parseFloat("23")); // 23
+// console.log(typeof parseFloat("23")); //  number
 
-// // Krajnji razmaci ne prave problem.
-console.log(parseFloat(" 23.55    ")); // 23.55
+// // // Krajnji razmaci ne prave problem.
+// console.log(parseFloat(" 23.55    ")); // 23.55
 
-console.log(parseFloat("23+5")); // 23
+// console.log(parseFloat("23+5")); // 23
 
-// // Razmaci nisu dozvoljeni kod parseFloat() metode.
-console.log(parseFloat("23.25 56")); // 23.25
+// // // Razmaci nisu dozvoljeni kod parseFloat() metode.
+// console.log(parseFloat("23.25 56")); // 23.25
 
-console.log(parseFloat("rEc23 56")); // NaN
-console.log(parseFloat("23,78")); // 23
+// console.log(parseFloat("rEc23 56")); // NaN
+// console.log(parseFloat("23,78")); // 23
 
-console.log(parseFloat("73.78 23.23")); // 73.78
+// console.log(parseFloat("73.78 23.23")); // 73.78
 
-console.log(parseFloat("adf")); // NaN
+// console.log(parseFloat("adf")); // NaN
 
-console.log(parseFloat(true)); // NaN
+// console.log(parseFloat(true)); // NaN
 
-console.log(parseFloat(false)); // NaN
+// console.log(parseFloat(false)); // NaN
 
-console.log(parseFloat([])); // NaN
+// console.log(parseFloat([])); // NaN
 
-console.log(parseFloat({})); // NaN
+// console.log(parseFloat({})); // NaN
