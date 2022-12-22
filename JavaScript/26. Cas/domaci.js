@@ -74,3 +74,21 @@ console.log(veciBroj(40, 50));
 console.log(veciBroj(-40, 50));
 console.log(veciBroj("a", 50));
 console.log(veciBroj(2, 10));
+
+function test(prvi, drugi) {
+  if (
+    ((prvi >= 40 && prvi <= 60) || (prvi >= 70 && prvi <= 100)) &&
+    ((drugi >= 40 && drugi <= 60) || (drugi >= 70 && drugi <= 100))
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(test(45, 90));
+console.log(test(45, 45));
+console.log(test(90, 45));
+console.log(test(90, 90));
+console.log(test(20, 90));
+console.log(test(90, 20));
