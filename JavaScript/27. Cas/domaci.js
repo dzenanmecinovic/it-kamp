@@ -11,7 +11,7 @@ console.log(obimKruga(20));
 
 // 2.
 function povrsinaKruga(d) {
-  return `Površina kruga je: ${2 * (d / 2) * Math.PI} centimetara.`;
+  return `Površina kruga je: ${Math.PI * (d / 2) ** 2} centimetara.`;
 }
 console.log(povrsinaKruga(20));
 
