@@ -15,8 +15,8 @@ function povrsinaKruga(d) {
 }
 console.log(povrsinaKruga(20));
 
-// 3.     1 rad = 57 stepeni
+// 3.     1 rad = 57 stepeni // 57.295779513
 function radianiUStepene(rad) {
   return `${rad} radijana je približno ${rad * 57} stepeni.`;
 }
-console.log(radianiUStepene(2));
+console.log(radianiUStepene(3.51));
