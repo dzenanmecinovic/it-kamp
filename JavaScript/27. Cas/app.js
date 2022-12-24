@@ -140,42 +140,57 @@ console.log(bolji(35, 30, 40, 25));
 console.log(bolji(35, 30, 40, 30));
 // console.log(bolji(35, 30, 40, 25));
 /////////////////////////////////////////////
-
+// root
 // function NZD(a, b) {
-//   let nzd;
-//   for (let i = 0; i < a || i < b; i--) {
-//     if (a % i !== 0 || b % i !== 0) {
-//       continue;
-//     } else {
-//       nzd;
+//   // const manji = a < b ? a : b
+//   let manji = Math.min(a, b);
+//   let zeljeniBroj;
+//   while (manji >= 1) {
+//     if (a % manji === 0 && b % manji === 0) {
+//       zeljeniBroj = manji;
+//       break;
 //     }
+//     manji--;
 //   }
-//   return nzd;
+//   return zeljeniBroj;
 // }
 
+// console.log(NZD(10, 15));
 // console.log(NZD(5, 10));
-
-// root
-function NZD(a, b) {
-  // const manji = a < b ? a : b
-  let manji = Math.min(a, b);
-  let zeljeniBroj;
-  while (manji >= 1) {
-    if (a % manji === 0 && b % manji === 0) {
-      zeljeniBroj = manji;
-      break;
-    }
-    manji--;
-  }
-  return zeljeniBroj;
-}
-
-console.log(NZD(10, 15));
-console.log(NZD(5, 10));
-console.log(NZD(4, 9));
+// console.log(NZD(4, 9));
 
 // Domaci NZS.
 // NZS
 // 2, 4 -- 4
 
 // 4, 5 -- 20
+
+function NZS(a, b) {
+  let veci = Math.max(a, b);
+  let nzs;
+  while (1 <= veci) {
+    if (veci % a === 0 && veci % b === 0) {
+      nzs = veci;
+      break;
+    }
+    veci++;
+  }
+  return nzs;
+}
+console.log(NZS(2, 4));
+console.log(NZS(4, 5));
+
+function NZSnovi(a, b) {
+  let veci = Math.max(a, b);
+  let nzs;
+  while (veci >= 1) {
+    if (veci % a === 0 && veci % b === 0) {
+      nzs = veci;
+      break;
+    }
+    veci++;
+  }
+  return nzs;
+}
+
+console.log(NZSnovi(5, 4));
