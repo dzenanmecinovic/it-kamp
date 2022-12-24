@@ -26,7 +26,6 @@
 // console.log(typeof array)
 // upozorenje = ["Dzenan Mecinovic"]
 
-
 // alert(array);
 // alert(upozorenje);
 
@@ -36,7 +35,7 @@
 //     if (broj % 2 === 1) {
 //         console.log("Broj mora biti paran")
 //         break;
-//     } 
+//     }
 //     console.log(iterator**2)
 //     iterator++
 // }
@@ -64,22 +63,22 @@
 //     console.log(i)
 // }
 
-        // var str = new String("Demo Text");
-        // document.write("Following is bigger text: "+str.big());
-        // let x = +prompt("Unesite neki pozitivan broj koji je manji od 100 hiljada")
-        //     if(x < 0) {
-        //         document.write("Broj mora biti veci od 0, a manji od 100 hiljada")
-        //     } else if(x >= 100000) {
-        //         document.write("Broj mora biti manji od 100 hiljada")
-        //     } else if (isNaN(x)) {
-        //         document.write("Uneta vrednost mora biti broj.")
-        //     } else {
-        //         document.write("Uneta vrednost je" + " " + x);
-        //     }
+// var str = new String("Demo Text");
+// document.write("Following is bigger text: "+str.big());
+// let x = +prompt("Unesite neki pozitivan broj koji je manji od 100 hiljada")
+//     if(x < 0) {
+//         document.write("Broj mora biti veci od 0, a manji od 100 hiljada")
+//     } else if(x >= 100000) {
+//         document.write("Broj mora biti manji od 100 hiljada")
+//     } else if (isNaN(x)) {
+//         document.write("Uneta vrednost mora biti broj.")
+//     } else {
+//         document.write("Uneta vrednost je" + " " + x);
+//     }
 
-        // const array1 = ['a', 'b', 'c'];
-        // array1.forEach(element => console.log(element));
-        // console.log(array1)
+// const array1 = ['a', 'b', 'c'];
+// array1.forEach(element => console.log(element));
+// console.log(array1)
 
 // 1. Zadatak:
 // Napisati program na osnovu dva uneta od strane korisnika ispisuje:
@@ -151,13 +150,13 @@
 // for(i = 1; i <= 100; i++) {
 //         if(i % 3 === 0 && i % 5 === 0) {
 //         console.log("FIZZ BUZ")
-//         } 
+//         }
 //         else if(i % 3 === 0) {
 //         console.log("FIZZ")
-//         } 
+//         }
 //         else if(i % 5 === 0) {
 //         console.log("BUZZ")
-//         } 
+//         }
 //         else {
 //             console.log(i)
 //  }
@@ -183,7 +182,6 @@
 // }
 // }
 
-
 // console.log(new Date())
 
 // const mojaFunkcija = function(recenica) {
@@ -203,35 +201,34 @@
 //             return recenica2;
 //         }
 //     }
-    
+
 //     console.log(mojaFunkcija("Kraj casa"))
 //     console.log(mojaFunkcija("Kraj caaasa je upravo sadaaaa."))
 
+// const mojaFunkcija = function(recenica) {
+//     if(recenica.length > 9) {
+//         let Pola;
+//         if(recenica.length % 2 === 0) {
+//             Pola = recenica.length / 2
+//         } else if(recenica.length % 2 !== 0) {
+//             Pola = Math.round(recenica.length / 2)
+//         }
+//         const polovina = recenica.slice(Pola, recenica.length)
+//         const izmena = polovina.replace(/a/g, "B")
+//         const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
+//         return konacna;
+//     } else {
+//         const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
+//         return recenica2;
+//     }
+// }
 
-    // const mojaFunkcija = function(recenica) {
-    //     if(recenica.length > 9) {
-    //         let Pola;
-    //         if(recenica.length % 2 === 0) {
-    //             Pola = recenica.length / 2
-    //         } else if(recenica.length % 2 !== 0) {
-    //             Pola = Math.round(recenica.length / 2)
-    //         }
-    //         const polovina = recenica.slice(Pola, recenica.length)
-    //         const izmena = polovina.replace(/a/g, "B")
-    //         const konacna = "Ovo je novodobijena recenica".concat(" ", izmena)
-    //         return konacna;
-    //     } else {
-    //         const recenica2 = recenica.concat(recenica.length, " ", "nedovoljno za dalje ispitivanje.")
-    //         return recenica2;
-    //     }
-    // }
-    
-    // console.log(mojaFunkcija("Kraj casa"))
-    // console.log(mojaFunkcija("Kraj casaaaa"))
+// console.log(mojaFunkcija("Kraj casa"))
+// console.log(mojaFunkcija("Kraj casaaaa"))
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
-    // Domaci zadatak.
+// Domaci zadatak.
 // Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
 //  datu recenicu u vise oblika (spojenu u jedan string).
 // 1. recenicu ispisanu velikim slovima,
@@ -300,12 +297,11 @@
 //       sesta
 //     );
 //   };
-  
+
 //   // Izostavljajuci drugi argument kod slice() metode se uzima isecak do kraja stringa.
 //   // const isecak = "Recenica za primenu slice metode jednim argumentom.".slice(12);
 //   // console.log(isecak);
 //   console.log(domaci());
-
 
 // var getMax = function (str) {
 //   var max = 0,
@@ -321,19 +317,28 @@
 
 //  console.log(getMax("radil funkcijaaaaaa"))
 
+// function ponavljanjeKaraktera(string, brojPonavljanja) {
+// //   console.log(ponavljanjeKaraktera("abcddef", 2)) // [d]
+// //   console.log(ponavljanjeKaraktera("tfghhhplffzaaa", 3)) // [h, a]
+//     var brojPonavljanja = 0,
+//       maxChar = '';
+//    string.split('').forEach(function(char){
+//      if(string.split(char).length > brojPonavljanja) {
+//       brojPonavljanja = string.split(char).length;
+//          maxChar = char;
+//       }
+//    });
+//    return `${brojPonavljanja} karaktera imaju slova ${maxChar}`;
+//  };
 
-function ponavljanjeKaraktera(string, brojPonavljanja) {
-//   console.log(ponavljanjeKaraktera("abcddef", 2)) // [d]
-//   console.log(ponavljanjeKaraktera("tfghhhplffzaaa", 3)) // [h, a]
-    var brojPonavljanja = 0,
-      maxChar = '';
-   string.split('').forEach(function(char){
-     if(string.split(char).length > brojPonavljanja) {
-      brojPonavljanja = string.split(char).length;
-         maxChar = char;
-      }
-   });
-   return `${brojPonavljanja} karaktera imaju slova ${maxChar}`;
- };
+//  console.log(ponavljanjeKaraktera("testiranje zzzzzzzzzzzzzadate funkcije"));
 
- console.log(ponavljanjeKaraktera("testiranje zzzzzzzzzzzzzadate funkcije"));
+function stepenovanje(broj, n) {
+  let mnozenje = 1;
+  for (var i = 0; i < n; i++) {
+    mnozenje *= broj;
+  }
+  return mnozenje;
+}
+
+console.log(stepenovanje(2, 8));
