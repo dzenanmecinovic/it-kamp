@@ -28,6 +28,6 @@ console.log(radianiUStepene(3));
 console.log(radianiUStepene(5));
 
 let doh = "Doh";
-let veciDoh = doh.toUpperCase;
+// let veciDoh = doh.toUpperCase;
 
-console.log(typeof doh, typeof veciDoh);
+// console.log(typeof doh, typeof veciDoh); // string function

@@ -177,20 +177,5 @@ function NZS(a, b) {
   }
   return nzs;
 }
-console.log(NZS(2, 4));
-console.log(NZS(4, 5));
-
-function NZSnovi(a, b) {
-  let veci = Math.max(a, b);
-  let nzs;
-  while (veci >= 1) {
-    if (veci % a === 0 && veci % b === 0) {
-      nzs = veci;
-      break;
-    }
-    veci++;
-  }
-  return nzs;
-}
-
-console.log(NZSnovi(5, 4));
+// console.log(NZS(2, 4));
+// console.log(NZS(4, 5));
