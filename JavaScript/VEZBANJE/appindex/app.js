@@ -333,12 +333,12 @@
 
 //  console.log(ponavljanjeKaraktera("testiranje zzzzzzzzzzzzzadate funkcije"));
 
-function stepenovanje(broj, n) {
-  let mnozenje = 1;
-  for (var i = 0; i < n; i++) {
-    mnozenje *= broj;
-  }
-  return mnozenje;
-}
+// function stepenovanje(broj, n) {
+//   let mnozenje = 1;
+//   for (var i = 0; i < n; i++) {
+//     mnozenje *= broj;
+//   }
+//   return mnozenje;
+// }
 
-console.log(stepenovanje(2, 8));
+// console.log(stepenovanje(2, 8));

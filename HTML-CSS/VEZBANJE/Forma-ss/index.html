@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
     <title>Login Form</title>
 </head>
 <body>
@@ -13,17 +14,17 @@
         <br>
         <br>
         <br>
-        <form action="https://www.youtube.com" target="_blank">
-            <input type="text" placeholder="Username" required>
+        <form id="forma" action="https://www.google.com" method="post" onsubmit="return proveriIme(this.ime.value) && proveriLozinku(this.lozinka1.value) && nastavi()">
+            <input type="text" name="ime" placeholder="Username" >
         <br>
         <br>
         <br>
-            <input type="password" name="password" id="pass" placeholder="Password" required> 
+            <input type="password" name="lozinka1" placeholder="Password" > 
         <br>
         <br>
             <a href="https://www.google.rs" target="_blank">Forgot Password?</a> <br>
         <br>
-            <button type="submit">Login</button>
+            <input id="posalji" type="submit" value="Login"></input>
         <br>
         <br>
         </form>

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+#forma {
+  margin-top: 50px;
+  position: relative;
+  left: 25rem;
+  height: 200px;
+  width: 250px;
+  background-color: aqua;
+  text-align: center;
+}
+
+#forma input {
+  background-color: aqua;
+}
+
+#forma select {
+  background-color: aqua;
+}

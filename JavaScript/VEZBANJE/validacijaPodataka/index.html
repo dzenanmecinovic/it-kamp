@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>JavaScript Validacija Podataka</title>
+  </head>
+  <body>
+    <form
+      id="forma"
+      action="/HTML-CSS/VEZBANJE/Display Grid/index.html"
+      method="post"
+      onsubmit="return proveriIme(this.ime.value) && proveriPrezime(this.ime.value) && proveriZemlju(this.zemlja) && proveriLozinku(this.password1.value, this.password2.value) && proveriSaglasnost(dane) && nastavi()"
+    >
+      <table border="1">
+        <tr>
+          <td>Ime:</td>
+          <td><input type="text" name="ime" /></td>
+        </tr>
+        <tr>
+          <td>Prezime:</td>
+          <td><input type="text" name="prezime" /></td>
+        </tr>
+        <tr>
+          <td>Zemlja:</td>
+          <td>
+            <select name="zemlja">
+              <option>-----</option>
+              <option>Srbija</option>
+              <option>Makedonija</option>
+              <option>BiH</option>
+              <option>Hrvatska</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Lozinka:</td>
+          <td>
+            <input type="password" name="password1" />
+          </td>
+        </tr>
+        <tr>
+          <td>Potvrdi lozinku:</td>
+          <td>
+            <input type="password" name="password2" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="posalji" />
+          </td>
+        </tr>
+        <tr>
+          <td>Da li se slazete?</td>
+          <td>
+            Da<input type="radio" name="dane" value="da" />Ne<input
+              type="radio"
+              name="dane"
+              value="ne"
+              checked="checked"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

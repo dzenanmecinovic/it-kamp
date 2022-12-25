@@ -12,30 +12,28 @@
 ////////////////////////////////////////////// PRVI ZADATAK ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-let prvi = +prompt("Unesite prvi broj:")
-let drugi = +prompt("Unesite drugi broj:")
-
+let prvi = +prompt("Unesite prvi broj:");
+let drugi = +prompt("Unesite drugi broj:");
 
 if (prvi === drugi) {
-    console.log("Povrsina kvadrata je:" + (prvi * drugi) + "m²")
+  console.log("Povrsina kvadrata je:" + prvi * drugi + "m²");
 } else if (prvi < 0) {
-    console.log("Broj ne sme biti manje od 0")
+  console.log("Broj ne sme biti manje od 0");
 } else if (drugi < 0) {
-    console.log("Broj ne sme biti manji od 0")
-} else if (prvi = drugi) {
-    console.log("Povrsina pravougaonika je:" + (prvi * drugi) + "m²")
-} 
+  console.log("Broj ne sme biti manji od 0");
+} else if ((prvi = drugi)) {
+  console.log("Povrsina pravougaonika je:" + prvi * drugi + "m²");
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////// DRUGI ZADATAK ///////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let x = +prompt("Unesite deljenik")
-let y = +prompt("Unesite delilac")
+let x = +prompt("Unesite deljenik");
+let y = +prompt("Unesite delilac");
 
 if (y > 0) {
-    console.log("Količnik je" + " " + (x/y))
+  console.log("Količnik je" + " " + x / y);
 } else {
-    console.log("Deljenje nemoguće")
+  console.log("Deljenje nemoguće");
 }
