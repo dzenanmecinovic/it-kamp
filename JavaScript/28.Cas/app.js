@@ -40,7 +40,7 @@ console.log(datum);
 datum = new Date(6, 0);
 console.log(datum);
 
-// Date.now() je metoda koja nam prikazuje boj milisekundi od 1.1.1970. do trenutnog vremena.
+// Date.now() je metoda koja nam prikazuje broj milisekundi od 1.1.1970. do trenutnog vremena.
 const datum2 = Date.now();
 console.log(datum2);
 
