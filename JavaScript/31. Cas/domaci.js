@@ -19,22 +19,17 @@ let brojNumbera = 0;
 let brojBooleanova = 0;
 let brojNizova = 0;
 for (i = 0; i < niz.length; i++) {
-  if (niz[i] === niz[i] instanceof Array) {
-    brojNizova++;
-  }
-  if (niz[i] === typeof Number) {
-    brojNumbera++;
-  }
-  if (niz[i] === typeof String) {
+  if (typeof niz[i] === typeof "string") {
     brojStringova++;
-  }
-  if (niz[i] === typeof Boolean) {
+  } else if (typeof niz[i] === typeof 20) {
+    brojNumbera++;
+  } else if (typeof niz[i] === typeof true) {
     brojBooleanova++;
-  } else {
-    break;
+  } else if (typeof niz[i] === typeof ["array"]) {
+    brojNizova++;
   }
 }
 
 console.log(
-  `U nizu "niz" se nalazi ${brojStringova} stringova, ${brojNumbera} brojeva, ${brojBooleanova} booleana, ${brojNizova} nizova.`
+  `U datom nizu se nalazi ${brojStringova} stringova, ${brojNumbera} brojeva, ${brojBooleanova} booleana, ${brojNizova} nizova.`
 );
