@@ -711,13 +711,18 @@ body {
   margin-left: 12.2rem;
   border-radius: 50px 50px;
 }
-
+/********************************************************/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+/********************************************************/
 @media screen and (max-width: 500px) {
   body {
     font-family: "Raleway", sans-serif;
     /* height: 200vh; */
     overflow-x: hidden;
-    width: 500px;
+    /* width: 500px; */
   }
 
   /* Fixed */
@@ -745,11 +750,12 @@ body {
   }
 
   .fixed img {
-    height: 25vh;
-    width: 50vw;
+    height: 60vh;
+    width: 150vw;
     border-radius: 60px;
-    margin-top: 15rem;
-    margin-left: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .fixed a {
@@ -1114,6 +1120,10 @@ body {
     display: none;
   }
 
+  .flex .podaci h2 {
+    display: none;
+  }
+
   .flex .podaci {
     height: 60vh;
     width: 90vw;
@@ -1272,7 +1282,7 @@ body {
   }
 
   .grid {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
   }
 
