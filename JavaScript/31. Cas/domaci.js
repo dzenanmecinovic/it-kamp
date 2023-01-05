@@ -33,3 +33,29 @@ for (i = 0; i < niz.length; i++) {
 console.log(
   `U datom nizu se nalazi ${brojStringova} stringova, ${brojNumbera} brojeva, ${brojBooleanova} booleana, ${brojNizova} nizova.`
 );
+
+function types(niz) {
+  let stringTipa = 0;
+  let numberTipa = 0;
+  let booleanTipa = 0;
+  let nizTipa = 0;
+  for (let item of niz) {
+    if (typeof item === "string") {
+      stringTipa++;
+    } else if (typeof item === "number") {
+      numberTipa++;
+    } else if (typeof item === "boolean") {
+      booleanTipa++;
+    } else if (item instanceof Array) {
+      nizTipa++;
+    }
+  }
+  return `U datom nizu su se nasla: \n ${stringTipa} stringa, \n ${numberTipa} broja, \n ${booleanTipa} boolean, \n ${nizTipa} niz.`;
+}
+console.log(types(niz));
+
+// for (let i of nizz) {
+//   console.log(i);
+// }
+
+// Novi zapis for petlje, koji se odnosi na sve iterirajuce objekte.

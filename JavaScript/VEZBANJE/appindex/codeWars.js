@@ -6,13 +6,13 @@
 // spinWords( "This is a test") => returns "This is a test"
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
-// function spinWords(string) {
-//   let reci = string.split(" ");
-//   for (let i = 0; i < reci.length; i++) {
-//     if (reci[i].length >= 5) {
-//       reci[i] = reci[i].split("").reverse().join("");
-//     }
-//   }
-//   return reci.join(" ");
-// }
-// console.log(spinWords("Hey fellow warriors")); // WORKS
+function spinWords(string) {
+  let reci = string.split(" ");
+  for (let i = 0; i < reci.length; i++) {
+    if (reci[i].length >= 5) {
+      reci[i] = reci[i].split("").reverse().join("");
+    }
+  }
+  return reci.join(" ");
+}
+console.log(spinWords("Hey fellow warriors"));
