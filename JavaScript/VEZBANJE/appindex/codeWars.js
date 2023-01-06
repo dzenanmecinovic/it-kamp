@@ -16,3 +16,17 @@ function spinWords(string) {
   return reci.join(" ");
 }
 console.log(spinWords("Hey fellow warriors"));
+
+var isSquare = function (n) {
+  if (Math.ceil(Math.sqrt(n)) === Math.floor(Math.sqrt(n))) {
+    return true;
+  } else {
+    return false;
+  }
+};
+// console.log(Math.floor(Math.sqrt(9)));
+// console.log(Math.ceil(Math.sqrt(9)));
+// console.log(Math.floor(4.2));
+// console.log(Math.ceil(4.2));
+
+console.log(isSquare(5));
