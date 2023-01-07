@@ -125,7 +125,51 @@ console.log(extractMiddle("Sredin"));
 // console.log(extractMiddle("Sred"));
 /////////////////////////////////////////////////////////////////////////////////////////
 var string = "Sredin";
-var position = "Sredin".length / 2;
-var length = 1;
+var position = "Sredina".length / 2;
 console.log(position);
-console.log(string.substr(position, length));
+console.log(position);
+/////////////////////////////////////////////////////////////////////////////////////////
+function isPrimeNumber(n) {
+  for (var i = 2; i < n; i++) {
+    if (n % i === 0) return false;
+  }
+  return n > 1;
+}
+console.log(isPrimeNumber(73));
+/////////////////////////////////////////////////////////////////////////////////////////
+// function digitalRoot(number) {
+//   let sum = number;
+//   let arr = [];
+//   let reducer = (a, b) => parseInt(a) + parseInt(b);
+//   if (sum = number; sum > 9; sum++) {
+//     arr = sum.toString().split("");
+//     sum = arr.reduce(reducer);
+//     return sum;
+//   } else if (sum < 9) {
+//     return sum;
+//   }
+// }
+// console.log(digitalRoot(132189));
+
+function digitalRoot(number) {
+  let sum = number;
+  let arr = [];
+  let reducer = (a, b) => parseInt(a) + parseInt(b);
+
+  while (sum > 9) {
+    arr = sum.toString().split("");
+    sum = arr.reduce(reducer);
+  }
+
+  return sum;
+}
+if (sum < 9) {
+  var sum = number;
+  return sum;
+}
+////////////////////////////////////////////////////
+function digital_root(n) {
+  return ((n - 1) % 9) + 1;
+}
+console.log(digital_root(132189));
+console.log(((852 - 1) % 9) + 1);
