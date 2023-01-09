@@ -173,3 +173,14 @@ function digital_root(n) {
 }
 console.log(digital_root(132189));
 console.log(((852 - 1) % 9) + 1);
+////////////////////////////////////////////////// walk - the app //////////////////////////////////////
+let direkcija = ["n", "s", "w", "e"];
+for (i of direkcija) {
+  if (direkcija[i] == "n") {
+    direkcija[i] = "n";
+  } else if (direkcija[i] == "s") {
+    direkcija[i] = "s";
+  }
+}
+let randomDirekcija = Math.round(Math.random(direkcija[i]) * 3);
+console.log(randomDirekcija);
