@@ -1,21 +1,15 @@
-// Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+////////////////////////////// spin words ////////////////////////
 
-// Examples:
-
-// spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw"
-// spinWords( "This is a test") => returns "This is a test"
-// spinWords( "This is another test" )=> returns "This is rehtona test"
-
-// function spinWords(string) {
-//   let reci = string.split(" ");
-//   for (let i = 0; i < reci.length; i++) {
-//     if (reci[i].length >= 5) {
-//       reci[i] = reci[i].split("").reverse().join("");
-//     }
-//   }
-//   return reci.join(" ");
-// }
-// console.log(spinWords("Hey fellow warriors"));
+function spinWords(string) {
+  let reci = string.split(" ");
+  for (let i = 0; i < reci.length; i++) {
+    if (reci[i].length >= 5) {
+      reci[i] = reci[i].split("").reverse().join("");
+    }
+  }
+  return reci.join(" ");
+}
+console.log(spinWords("Hey fellow warriors"));
 
 //////////////////////////////////// like system ////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -25,22 +19,22 @@
 // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 /////////////////////////////////////////////////////////////////////////////////////////
-// function likes(names) {
-//   for (let i = 0; i < names.length; i++) {
-//     if (names[i] === 0) {
-//       return `No one likes this`;
-//     } else if (names[i] === 1) {
-//       return `${names[0]} likes this post.`;
-//     } else if (names[i] === 2) {
-//       return `${names[0]} i ${names[1]} like this post.`;
-//     } else if (names[i] === 3) {
-//       return `${names[0]}, ${names[1]}, ${names[2]} like this post.`;
-//     } else if (names[i] === 4) {
-//       return `${names[0]}, ${names[1]} and 2 others like this post.`;
-//     }
-//   }
-// }
-// console.log(likes([]));
+function likes(names) {
+  for (let i = 0; i < names.length; i++) {
+    if (names[i] === 0) {
+      return `No one likes this`;
+    } else if (names[i] === 1) {
+      return `${names[0]} likes this post.`;
+    } else if (names[i] === 2) {
+      return `${names[0]} i ${names[1]} like this post.`;
+    } else if (names[i] === 3) {
+      return `${names[0]}, ${names[1]}, ${names[2]} like this post.`;
+    } else if (names[i] === 4) {
+      return `${names[0]}, ${names[1]} and 2 others like this post.`;
+    }
+  }
+}
+console.log(likes([]));
 
 function likes(names) {
   if (names.length == 0) {
@@ -174,13 +168,50 @@ function digital_root(n) {
 console.log(digital_root(132189));
 console.log(((852 - 1) % 9) + 1);
 ////////////////////////////////////////////////// walk - the app //////////////////////////////////////
-let direkcija = ["n", "s", "w", "e"];
-for (i of direkcija) {
-  if (direkcija[i] == "n") {
-    direkcija[i] = "n";
-  } else if (direkcija[i] == "s") {
-    direkcija[i] = "s";
-  }
+function isValidWalk(walk) {
+  let ns = 0,
+    ew = 0;
+  if (walk.length === 10) {
+    for (let i of walk) {
+      if (i == "n") ns += 1;
+      if (i == "s") ns -= 1;
+      if (i == "e") ew += 1;
+      if (i == "w") ew -= 1;
+    }
+  } else return false;
+  return ns === 0 && ew === 0;
 }
-let randomDirekcija = Math.round(Math.random(direkcija[i]) * 3);
-console.log(randomDirekcija);
+
+console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
+////////////////////// Hashtag Generator //////////////////////
+function generateHashtag(str) {
+  if (str.trim() === "") return false;
+  const promene = str
+    .split(" ")
+    .map((rec) => rec.charAt(0).toUpperCase() + rec.slice(1))
+    .join("");
+  const promeneSaHestegom = `#${promene}`;
+  return promeneSaHestegom.length > 140 ? false : promeneSaHestegom;
+}
+console.log(generateHashtag("je ste se s es"));
+
+/////////////////////////////// count duplicates ////////////////////////////
+function duplicateCount(text) {
+  let result = 0,
+    soltingObject = {};
+  text
+    .toLowerCase()
+    .split("")
+    .map((str) => {
+      if (!soltingObject.hasOwnProperty(str)) {
+        soltingObject[str] = 0;
+      } else {
+        if (soltingObject[str] === 0) {
+          result += 1;
+        }
+        soltingObject[str] = soltingObject[str] + 1;
+      }
+    });
+  return result;
+}
+console.log(duplicateCount("Indivisibilities"));
