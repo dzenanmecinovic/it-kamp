@@ -26,7 +26,8 @@ function kvadratniKoreni(niz) {
 }
 console.log(kvadratniKoreni([9, 4]));
 ///////////////////////////////// cetvrti /////////////////////////////////
-const mapa = brojevi.map((element) =>
-  element < 0 ? Math.abs(element) : element ** 2
+const mapa = brojevi.map(
+  (element) => (element < 0 ? Math.abs(element) : element ** 2)
+  //element < 0 ? element * -1 : element **2 ;
 );
 console.log(mapa);
