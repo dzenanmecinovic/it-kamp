@@ -49,3 +49,5 @@ console.log(brojevi);
 // Ako zelimo da nas niz sortira brojeve random.
 brojevi.sort(() => 0.5 - Math.random());
 console.log(brojevi);
+
+// const niz = [-5, 6, 10, 45, 99, -44];

@@ -728,7 +728,7 @@ body {
   /* Fixed */
 
   .fixed {
-    width: 100%;
+    width: 20vw;
     height: 100vh;
     background-color: #040b15;
     position: fixed;
@@ -751,7 +751,7 @@ body {
 
   .fixed img {
     height: 60vh;
-    width: 150vw;
+    width: 10vw;
     border-radius: 60px;
     display: flex;
     justify-content: center;
