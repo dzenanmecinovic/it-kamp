@@ -135,3 +135,17 @@ function prvoVelikoINTERNET(input) {
 }
 
 console.log(prvoVelikoINTERNET("prvo slovo bi trebalo da bude veliko"));
+
+// 3.4. Саставити програм који за три унета цела броја исписује највећи.
+
+function najveciOdTri(a, b, c) {
+  max = a;
+  if (b > max) {
+    max = b;
+  }
+  if (c > max) {
+    max = c;
+  }
+  return max;
+}
+console.log(najveciOdTri(23, 102, 85));
