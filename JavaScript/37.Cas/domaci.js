@@ -5,7 +5,7 @@
 const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
 // 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
 
-///// prvi /////
+//////////////////////////////////////// prvi ////////////////////////////////////////
 function sumaParnih(arr) {
   const suma = arr
     .filter(function (element) {
@@ -15,7 +15,7 @@ function sumaParnih(arr) {
   return suma;
 }
 console.log(sumaParnih([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-///// drugi /////
+//////////////////////////////////////// drugi ////////////////////////////////////////
 function sum(arr) {
   const parni = [];
   for (i of arr) {
@@ -29,7 +29,7 @@ function sum(arr) {
   return `parni su [${parni}] a njihova suma kada se pomnoze samim sobom je ${suma}.`;
 }
 console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-///// treci /////
+//////////////////////////////////////// treci ////////////////////////////////////////
 function brojPonavljanja(arr1) {
   let element;
   let brojPojavljivanja = 1;
@@ -49,7 +49,7 @@ function brojPonavljanja(arr1) {
   return `${element} se pojavljuje ${brojPojavljivanja} puta.`;
 }
 console.log(brojPonavljanja([1, 2, 3, 4, 5, 6, 2, 2]));
-///// cetvrti /////
+//////////////////////////////////////// cetvrti ////////////////////////////////////////
 function caseSwap(input) {
   let ispis = "";
   for (let i = 0; i < input.length; i++) {
