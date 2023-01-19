@@ -600,11 +600,32 @@ body {
 
 .portfolio .boxportfolio {
   padding-top: 2rem;
-  padding-left: 5rem;
+  padding-left: 5.5rem;
   height: 70vh;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  row-gap: 5px;
+  grid-template-columns: 400px 400px 400px;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+
+.boxportfolio1 img {
+  border-radius: 35%;
+  flex-shrink: 2fr;
+}
+.boxportfolio2 img {
+  border-radius: 35%;
+}
+.boxportfolio3 img {
+  border-radius: 35%;
+}
+.boxportfolio4 img {
+  border-radius: 35%;
+}
+.boxportfolio5 img {
+  border-radius: 35%;
+}
+.boxportfolio6 img {
+  border-radius: 35%;
 }
 
 #slovoB {
