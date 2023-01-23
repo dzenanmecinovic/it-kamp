@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <!-- FONT PRELOAD -->
-    <link rel="preload" />
+    <!-- <link rel="preload" /> -->
     <!-- ICONS -->
     <link
       rel="stylesheet"
@@ -96,16 +96,15 @@
         </div>
       </ul>
       <div class="fixed-footer">
-        <p>&copy; Copyright myPortfolio</p>
         <p>
-          Designed by
-          <a
+          Created and designed by<a
             href="https://www.github.com/dzenanmecinovic"
             target="_blank"
             class="mention"
-            >dzenanmecinovic</a
+            >Dzenan Mecinovic</a
           >
         </p>
+        <p>2023 - All rights reserved &copy;</p>
       </div>
     </div>
     <div class="main">
@@ -124,7 +123,7 @@
         <img src="./Img/herobg1.png" alt="my_photo" loading="lazy" />
         <div class="podaci">
           <h2>Web Developer.</h2>
-          <p id="podebljani">
+          <p id="podebljani2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere
             commodi perferendis.
           </p>
@@ -150,8 +149,10 @@
               <p><strong>Phone:</strong> +381 69 4 3xx 7xx</p>
             </div>
             <div class="box6">
-              <span id="plava">></span>
-              <p><strong>E-mail:</strong> mecinovicd@gmail.com</p>
+              <span class="plavaEmail">></span>
+              <p id="emailMove">
+                <strong>E-mail:</strong> mecinovicd@gmail.com
+              </p>
             </div>
             <div class="box7">
               <span id="plava">></span>
@@ -226,41 +227,43 @@
         quae. Quaerat, illo.
       </p>
       <div class="grid">
-        <div class="prvigrid">
-          <br />
-          <label for="file">HTML</label><span>100%</span>
-          <br />
-          <progress id="file" value="100" max="100"></progress>
-        </div>
-        <div class="drugigrid">
-          <br />
-          <label for="file">PHP</label><span>0%</span>
-          <br />
-          <progress id="file" value="0" max="100"></progress>
-        </div>
-        <div class="trecigrid">
-          <br />
-          <label for="file">CSS</label><span>85%</span>
-          <br />
-          <progress id="file" value="85" max="100"></progress>
-        </div>
-        <div class="cetvrtigrid">
-          <br />
-          <label for="file">WORDPRESS/CMS</label><span>10%</span>
-          <br />
-          <progress id="file" value="10" max="100"></progress>
-        </div>
-        <div class="petigrid">
-          <br />
-          <label for="file">JAVASCRIPT</label><span>4%</span>
-          <br />
-          <progress id="file" value="4" max="100"></progress>
-        </div>
-        <div class="sestigrid">
-          <br />
-          <label for="file">PHOTOSHOP</label><span>60%</span>
-          <br />
-          <progress id="file" value="60" max="100"></progress>
+        <div class="sirina">
+          <div class="prvigrid">
+            <br />
+            <label for="file">HTML</label><span id="hatemel">100%</span>
+            <br />
+            <progress id="file" value="100" max="100"></progress>
+          </div>
+          <div class="drugigrid">
+            <br />
+            <label for="file">PHP</label><span id="pehape">10%</span>
+            <br />
+            <progress id="file" value="0" max="100"></progress>
+          </div>
+          <div class="trecigrid">
+            <br />
+            <label for="file">CSS</label><span id="ceeses">85%</span>
+            <br />
+            <progress id="file" value="85" max="100"></progress>
+          </div>
+          <div class="cetvrtigrid">
+            <br />
+            <label for="file">WORDPRESS/CMS</label><span>10%</span>
+            <br />
+            <progress id="file" value="10" max="100"></progress>
+          </div>
+          <div class="petigrid">
+            <br />
+            <label for="file">JAVASCRIPT</label><span id="javaskript">4%</span>
+            <br />
+            <progress id="file" value="4" max="100"></progress>
+          </div>
+          <div class="sestigrid">
+            <br />
+            <label for="file">PHOTOSHOP</label><span id="fotosop">60%</span>
+            <br />
+            <progress id="file" value="60" max="100"></progress>
+          </div>
         </div>
       </div>
     </div>
@@ -346,7 +349,7 @@
     </div>
     <footer>
       <p><b>@ Dzenan Mecinovic - 2023</b></p>
-      <p><b>All rights reserved &copy;</b></p>
+      <p id="drugi"><b>All rights reserved &copy;</b></p>
     </footer>
   </body>
 </html>
