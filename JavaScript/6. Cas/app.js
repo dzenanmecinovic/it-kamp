@@ -16,7 +16,7 @@
 // for petlja - Sintaksa:
 
 // for (statement1; statement2; statement3) {
-    // kod za izvrsavanje u svakoj iteraciji
+// kod za izvrsavanje u svakoj iteraciji
 // }
 
 // statement1 predstavlja definisanje promenljive koja ce da predstavlja iterator
@@ -24,16 +24,15 @@
 // statement3 predstavlja povecanje ili smanjenje koje se desi na kraju svake iteracije
 
 for (let i = 1; i <= 10; i++) {
-    console.log(i)
+  console.log(i);
 }
 
 // I Nacin
 for (let i = 1; i < 11; i++) {
-    if (i !== 2 && i !== 5) {
-        console.log(i)
-    }
+  if (i !== 2 && i !== 5) {
+    console.log(i);
+  }
 }
-
 
 // continue keyword (rezervisana rec) ako se nadje u nekoj iteraciji, zapravo oznacava
 // da se ta iteracija zanemari i da se nastavi dalje sa sledecom.
@@ -41,11 +40,11 @@ for (let i = 1; i < 11; i++) {
 // II Nacin
 
 for (let i = 1; i < 11; i++) {
-    if (i === 2 || i === 5) {
-        continue;
-    } else {
-        console.log(i)
-    }
+  if (i === 2 || i === 5) {
+    continue;
+  } else {
+    console.log(i);
+  }
 }
 
 // break keyword (rezervisana rec) predstavlja da od tog trenutka for petlja prestaje sa radom.
@@ -53,11 +52,11 @@ for (let i = 1; i < 11; i++) {
 // ispisati sve brojeve od 1 do 10. ako je neki broj deljiv sa 7 neka se prekine petlja.
 
 for (let i = 1; i < 11; i++) {
-    if (i % 7 === 0) {
-        break;
-    } else {
-        console.log(i)
-    }
+  if (i % 7 === 0) {
+    break;
+  } else {
+    console.log(i);
+  }
 }
 
 // Ispisati parne brojeve od 1 do 20 na dva nacina.
@@ -65,17 +64,17 @@ for (let i = 1; i < 11; i++) {
 // I nacin
 
 for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 1) {
-        continue;
-    } else {
-        console.log(i)
-    }
+  if (i % 2 === 1) {
+    continue;
+  } else {
+    console.log(i);
+  }
 }
 
 // II nacin
 
 for (let broj = 2; broj <= 20; broj += 2) {
-    console.log(broj)
+  console.log(broj);
 }
 
 // Domaci
@@ -88,8 +87,10 @@ for (let broj = 2; broj <= 20; broj += 2) {
 // 4.
 // Suma neparnih prirodnih brojeva od 10 do 20.
 
-
-
 for (let i = 50; i <= 100; i += 5) {
-    console.log(i)
+  console.log(i);
+}
+
+for (let i = 6; i <= 14; i++) {
+  console.log(i * 2);
 }
