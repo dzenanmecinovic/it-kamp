@@ -8,6 +8,7 @@ const niz = [
 
 const niz2 = niz.flat();
 console.log(niz);
+console.log(niz2);
 
 // Write a JavaScript program which prints the elements of the following array. Go to the editor
 // Note : Use nested for loops.
