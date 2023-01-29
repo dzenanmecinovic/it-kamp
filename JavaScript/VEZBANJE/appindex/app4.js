@@ -157,3 +157,12 @@
 // niz.sort(odNajmanjegDoNajveceg);
 // console.log(niz);
 /////
+var firstName = "Dzenan";
+var lastName = "Mecinovic";
+
+var argument = firstName.split("");
+var argument2 = lastName.split("");
+
+var ispis = [argument.slice(0, 3) + argument2.slice(0, 2)];
+const result = ispis.replace(",", "");
+console.log(result);
