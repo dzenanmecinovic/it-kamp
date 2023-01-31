@@ -100,7 +100,7 @@ radnik.fullName();
 radnik.adresa.getAdress();
 console.log(radnik);
 
-// // 3. Zadatak
+// 3. Zadatak
 const automobil = {
   marka: "Audi",
   model: "Q7",
@@ -108,7 +108,7 @@ const automobil = {
   pogon: "quattro",
   menjac: "Automatik",
   km: 240000,
-  vlasnik: [062321552, 063],
+  vlasnik: [062321552, 0632323123],
   garaza: {
     parking: "JKP Servis",
     vikend: "od 17 free",
@@ -123,13 +123,13 @@ const automobil = {
       console.log(secondDate);
 
       const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
-      Number(automobil.garaza.dnevnaKarta);
-      return `Za dnevnu kartu za parking od ${od} do ${to} potrosicemo ${diffDays}Din`;
+      return `Za dnevnu kartu za parking od ${od} do ${to} potrosicemo ${
+        diffDays * automobil.garaza.dnevnaKarta
+      }Din`;
     },
   },
 };
 
-// for (let kljuc in automobil) {
-//   delete automobil[kljuc];
-// }
-// console.log(automobil);
+console.log(
+  automobil.garaza.platiZa(new Date(2023, 0, 21), new Date(2023, 0, 26))
+);
