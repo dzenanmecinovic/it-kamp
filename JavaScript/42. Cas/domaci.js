@@ -58,60 +58,73 @@ const prvi = {
   language: [],
   nickName: "",
   setLanguage: function (parametar) {
-    this.language.push(parametar);
+    if (!this.language.includes(parametar)) this.language.push(parametar);
   },
-  setNickName: () => {
-    var argument = prvi.firstName.split("");
-    var argument2 = prvi.lastName.split("");
-    const ispis = argument.slice(0, 3) + argument2.slice(0, 2);
-    const spojeni = ispis.join("");
-    return spojeni;
+  setNickName: function () {
+    this.nickName =
+      this.firstName.toUpperCase().slice(0, 1) +
+      this.firstName.toLowerCase().slice(1, 3) +
+      this.lastName.toLowerCase().slice(0, 2);
   },
 };
 prvi.setLanguage("Engleski");
+prvi.setLanguage("Nemacki");
+prvi.setLanguage("Nemacki");
+prvi.setLanguage("Nemacki");
+prvi.setLanguage("Nemacki");
 prvi.setLanguage("Nemacki");
 console.log(prvi);
 prvi.setNickName();
 console.log(prvi);
 
 // // 2. Zadatak
-// const radnik = {
-//   firstName: "Dzenan",
-//   lastName: "Kosuta",
-//   fullName: function () {
-//     this.fullName = this.firstName + " " + this.lastName;
-//   },
-//   adresa: {
-//     ulica: "avnoja",
-//     broj: "bb",
-//     grad: "Novi Pazar",
-//     getAdress: function () {
-//       this.getAdress = `${radnik.fullName} zivi u ulici ${this.ulica} u Novom Pazaru.`;
-//       // vraca Dzenan Kosuta zivi u ulici Avnoja u Novom Pazaru.
-//     },
-//   },
-// };
+const radnik = {
+  firstName: "Dzenan",
+  lastName: "Kosuta",
+  fullName: function () {
+    this.fullName = this.firstName + " " + this.lastName;
+  },
+  adresa: {
+    ulica: "avnoja",
+    broj: "bb",
+    grad: "Novi Pazar",
+    getAdress: function () {
+      this.getAdress = `${radnik.fullName} zivi u ulici ${this.ulica} u Novom Pazaru.`;
+      // vraca Dzenan Kosuta zivi u ulici Avnoja u Novom Pazaru.
+    },
+  },
+};
 
-// radnik.fullName();
-// // console.log(radnik);
-// radnik.adresa.getAdress();
+radnik.fullName();
 // console.log(radnik);
+radnik.adresa.getAdress();
+console.log(radnik);
 
-// // 3. Zadatak // - NIJE GOTOVO
-// const automobil = {
-//   marka: "Audi",
-//   model: "Q7",
-//   boja: "Bela",
-//   pogon: "quattro",
-//   menjac: "Automatik",
-//   km: 240000,
-//   vlasnik: [062321552, 063],
-//   garaza: {
-//     parking: "JKP Servis",
-//     vikend: "od 17 free",
-//     satnaKarta: "50",
-//     dnevnaKarta: "200",
-//     mesecnaKarta: "2000",
-//     platiZa: function () {},
-//   },
-// };
+// // 3. Zadatak
+const automobil = {
+  marka: "Audi",
+  model: "Q7",
+  boja: "Bela",
+  pogon: "quattro",
+  menjac: "Automatik",
+  km: 240000,
+  vlasnik: [062321552, 063],
+  garaza: {
+    parking: "JKP Servis",
+    vikend: "od 17 free",
+    satnaKarta: "50",
+    dnevnaKarta: "200",
+    mesecnaKarta: "2000",
+    platiZa: function (od, to) {
+      const oneDay = 24 * 60 * 60 * 1000; // hoursminutessecondsmilliseconds
+      const firstDate = new Date(od);
+      const secondDate = new Date(to);
+      console.log(firstDate);
+      console.log(secondDate);
+
+      const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+      Number(automobil.garaza.dnevnaKarta);
+      return `Za dnevnu kartu za parking od ${od} do ${to} potrosicemo ${diffDays}Din`;
+    },
+  },
+};
