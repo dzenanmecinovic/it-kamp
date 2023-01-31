@@ -128,3 +128,8 @@ const automobil = {
     },
   },
 };
+
+// for (let kljuc in automobil) {
+//   delete automobil[kljuc];
+// }
+// console.log(automobil);
