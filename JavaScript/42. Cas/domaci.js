@@ -116,7 +116,7 @@ const automobil = {
     dnevnaKarta: "200",
     mesecnaKarta: "2000",
     platiZa: function (od, to) {
-      const oneDay = 24 * 60 * 60 * 1000; // hoursminutessecondsmilliseconds
+      const oneDay = 24 * 60 * 60 * 1000;
       const firstDate = new Date(od);
       const secondDate = new Date(to);
       console.log(firstDate);
