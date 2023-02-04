@@ -45,3 +45,14 @@ console.log(povecanje());
 console.log(automobil.garaza.satnaKarta);
 console.log(automobil.garaza.dnevnaKarta);
 console.log(automobil.garaza.mesecnaKarta);
+
+// root
+
+function povecanjeVrednosti2() {
+  this.satnaKarta *= 1.2;
+  this.dnevnaKarta *= 1.2;
+  this.mesecnaKarta *= 1.2;
+}
+
+povecanjeVrednosti2.call(automobil.garaza);
+console.log(automobil.garaza);
