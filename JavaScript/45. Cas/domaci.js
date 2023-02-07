@@ -85,7 +85,7 @@ const grupa = [
     polozenC: false,
   },
 ];
-
+//  Napraviti funkciju koja pravi novi niz koji ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
 function novi(group) {
   var niz = group.filter((element) => {
     if (element.polozenC == false && element.bojaOciju == "braon") {
