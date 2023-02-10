@@ -5,7 +5,12 @@ const person = {
   lastName: "Medjedovic",
   age: 16,
 };
-
+const entries = Object.entries(person);
+console.log(entries);
+const flat = entries
+  .flat()
+  .filter((element) => typeof element === typeof "string");
+console.log(flat);
 // Object.freeze(obj) metoda čini taj objekat nepromenljivim.
 person.age = 17;
 console.log(person);
@@ -25,13 +30,13 @@ console.log(Object.keys(person));
 
 // Object.entries(obj) vraća niz nizova.
 // Svaki podniz je niz od dva elementa.
-const entries = Object.entries(person);
+// const entries = Object.entries(person);
 console.log(entries);
 
-const flat = entries
-  .flat()
-  .filter((element) => typeof element === typeof "string");
-console.log(flat);
+// const flat = entries
+//   .flat()
+//   .filter((element) => typeof element === typeof "string");
+// console.log(flat);
 
 // Object.is(obj1, obj2)
 

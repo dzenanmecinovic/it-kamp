@@ -18,7 +18,6 @@ let w = z.toExponential(2);
 console.log(w);
 console.log(typeof w);
 
-
 let a = 12.1234;
 let b = a.toExponential(3);
 console.log(b);
@@ -117,7 +116,7 @@ function izbrisiDruguCifru(broj) {
 // Domaci zadatak:
 // Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kojem su zamenjene prva i treca cifra, kao i druga i cetvrta cifra.
 // 4752
-// 5247 
+// 5247
 
 // 2. parseInt() - analizira argument i vraca nam ceo broj ako je moguce.
 

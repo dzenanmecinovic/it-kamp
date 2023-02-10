@@ -1,6 +1,4 @@
-// replace() metoda vrsi zamenu nekoliko karaktera datog stringa.
-// Ima 2 argumenta.
-// Po defaultu replace() metoda menja samo prvo pronalazenje datog stringa.
+// replace() metoda vrsi zamenu nekoliko karaktera datog stringa. Ima 2 argumenta. Po defaultu replace() metoda menja samo prvo pronalazenje datog stringa.
 
 const recenica = "Danas smo podelili sertifikate za HTML, CSS i JavaScript.";
 

@@ -106,7 +106,7 @@ const protectEmail = (email) => {
       index = broj;
       break;
     } else if (email[i + 4] !== isNaN) {
-      index2 = i;
+      index = i;
     }
   }
   const indexAt = email.indexOf("@");
