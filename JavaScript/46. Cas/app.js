@@ -139,13 +139,13 @@ console.log(discount(products));
 // splice(arg1, arg2, arg3, arg4, ...)
 // splice(4,2)
 
-const move = (arr, pos1, pos2) => {
-  const element = arr[pos1];
-  arr.splice(pos1, 1);
-  arr.splice(pos2, 0, element);
-  return arr;
+const pomeri = (niz, prvi, drugi) => {
+  const element = niz[prvi];
+  niz.splice(prvi, 1);
+  niz.splice(drugi, 0, element);
+  return niz;
 };
-console.log(move([10, 20, 30, 40, 50], 0, 2));
+console.log(pomeri([10, 20, 30, 40, 50], 0, 2));
 
 // Domaci:
 // 34. Write a JavaScript function to get nth largest element from an unsorted array. Go to the editor
