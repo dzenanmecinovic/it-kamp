@@ -746,3 +746,122 @@
 //   return Object.keys(obj);
 // }
 // console.log(namesOfProperties(person));
+
+// Napraviti funkciju koja ispituje argument.
+// Ako se u recenici nadje rec "skola", neka se vrati pozicija prvog pojavljivanja date reci.
+// Ako recenica pocinje sa recju "Automobil" neka se vrati boolean true;
+// Ako je recenica parne duzine neka se vrati broj pojavljivanja reci "kuca".
+
+// function checkString(str) {
+//   if (str.includes("skola")) {
+//     return str.indexOf("skola");
+//   } else if (str.startsWith("Automobil")) {
+//     return true;
+//   } else if (str.length % 2 == 0) {
+//     const brojPojavljivanjaReciKuca = str.match(/kuca/gi);
+//     return `Broj pojavljivanja reci kuca je ${brojPojavljivanjaReciKuca.length}.`;
+//   }
+// }
+// console.log(checkString("Sutra pocinje skola"));
+// console.log(checkString("Automobil je veoma skup"));
+// console.log(checkString("kuca kuca "));
+
+// // Unosi se string A i znak Z. Kreirati novi string B koji se dobija tako sto se iz unetog stringa izbacuje svaka pojava znaka Z. Npr, za unet string "Madagaskar" i znak "a", dobijamo rezultat "Mdgskr".
+
+// function izbacivanjeZnaka(a, z) {
+//   let b = "";
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] !== z) {
+//       b += a[i];
+//     }
+//   }
+//   return b;
+// }
+// console.log(izbacivanjeZnaka("Madagaskar", "a"));
+
+// // Za Domaci:
+// // Proveriti da li je uneti string palindrom (potpuno je isti kada se cita otpozadi).
+
+// function isPalindrom(str) {
+//   const str2 = str.split().reverse().join();
+//   if (str === str2) {
+//     return true;
+//   }
+// }
+// console.log(isPalindrom("anavolimilovana"));
+
+// // Sva velika slova u stringu treba svesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string 'webnstudy.com'. Slova koja se koriste u stringu pripadaju iskljucivo engleskoj abecedi.
+
+// const func = (str) => str.toLowerCase();
+// console.log(func("WEBnSTUDY.com"));
+
+// // Napraviti funkciju koja kod stringa koji predstavlja argument funkcije ispituje sledece:
+// // Ako dati string ima vecu duzinu od 9:
+// // Pravi novi string koji ce biti isecak od pola do kraja originalnog stringa. Nakon toga, novom stringu menjamo sva mala slova "a" sa "B", i funkcija ce vratiti novi string koji je sastavljen od "Ovo je novodobijena recenica, " i poslednjeg izmenjenog isecka.
+// // Ako string ima duzinu <= 9:
+// // Funkcija treba vratiti poruku:
+// // argument + {njena duzina} + "nedovoljno za dalje ispitivanje".
+
+// function checkString2(str) {
+//   const duzinaArgumenta = str.length;
+//   const duzinaPolaOriginalnog = str.length / 2;
+//   const polaOriginalnog = str.slice(duzinaPolaOriginalnog);
+//   if (str.length > 9) {
+//     const ispisPrvi = polaOriginalnog.replace(/a/g, "B");
+//     return `Ovo je novodobijena recenica: ${ispisPrvi}`;
+//   }
+//   if (str.length <= 9) {
+//     return `"${str}", sa duzinom od ${duzinaArgumenta} karaktera, nedovoljno za dalje ispitivanje.`;
+//   }
+// }
+// console.log(checkString2("recenic"));
+
+// // Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
+
+// function iskljuciDeseticu(broj) {
+//   if (broj.toString().length !== 3) {
+//     return `Samo trocifreni`;
+//   } else {
+//     return broj.toString().replace(broj.toString()[1], "");
+//   }
+// }
+// console.log(iskljuciDeseticu(646));
+
+// // Write a javaScript to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+
+// function range(prvi, drugi) {
+//   if (prvi >= 40 && prvi <= 60 && drugi >= 40 && drugi <= 60) {
+//     return `Oba pripadaju opsegu 40..60`;
+//   } else if (prvi >= 70 && prvi <= 100 && drugi >= 70 && drugi <= 100) {
+//     return `Oba pripadaju opsegu 70..100`;
+//   } else if (prvi >= 40 && prvi <= 60 && drugi >= 70 && drugi <= 100) {
+//     return `Prvi pripada opsegu 40..60 a drugi opsegu 70..100`;
+//   } else if (drugi >= 40 && drugi <= 60 && prvi >= 70 && prvi <= 100) {
+//     return `Prvi pripada opsegu 70..100 a drugi 40..60`;
+//   }
+// }
+// console.log(range(50, 90));
+// console.log(range(90, 50));
+// console.log(range(50, 50));
+// console.log(range(90, 90));
+// // Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
+
+// function veciURange(prvi, drugi) {
+//   if (prvi < 40 || prvi > 60 || drugi < 40 || drugi > 60) {
+//     return `Neki od argumenata je van opsega.`;
+//   } else if (prvi > drugi) return `Prvi broj je veci od drugog.`;
+//   else if (prvi < drugi) return `Prvi broj je manji od drugog.`;
+// }
+// console.log(veciURange(42, 61));
+// console.log(veciURange(55, 42));
+
+// // 32. Write a JavaScript program to find a value which is nearest do 100 from two different given integer values.
+
+// function bliziSto(prvi, drugi) {
+//   const prviPrvi = Math.abs(prvi - 100); //
+//   const drugiDrugi = Math.abs(drugi - 100); //
+//   if (prviPrvi > drugiDrugi) return `Drugi je blizi sto`;
+//   if (prviPrvi < drugiDrugi) return `Prvi je blizi sto`;
+// }
+
+// console.log(bliziSto(102, 103));
