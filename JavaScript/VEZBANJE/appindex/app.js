@@ -865,3 +865,158 @@
 // }
 
 // console.log(bliziSto(102, 103));
+
+// pronalazenje svih stringova koji pocinju odredjenim slovom
+
+// const imena = [
+//   "Mehmed",
+//   "Muhamed",
+//   "Samed",
+//   "Dzenan",
+//   "Merisa",
+//   "Ismail",
+//   "Ishak",
+//   "Petar",
+//   "Veljko",
+// ];
+// function findElement(niz, char) {
+//   for (let i of niz) {
+//     if (i.startsWith(char)) {
+//       console.log(niz.indexOf(i) + 1);
+//     }
+//   }
+// }
+
+// findElement(imena, "M");
+
+// Create a function which returns the number of true values there are in an array.
+// All array items are of the type bool (true or false).
+
+// function trueCounter(arr) {
+//   if (arr == "") return 0;
+//   let counter = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == true) counter++;
+//   }
+//   return counter;
+// }
+// console.log(trueCounter([true, false, true, true]));
+
+// Create a function that takes an array containing only numbers and return the first element.
+
+// function getFirstValue(arr) {
+//   function everyNumber(array) {
+//     return Number(array);
+//   }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (everyNumber) {
+//       return arr[0];
+//     }
+//   }
+// }
+
+// console.log(getFirstValue([1, 2, 3]));
+// console.log(getFirstValue([80, 5, 100]));
+// console.log(getFirstValue([-500, 0, 50]));
+
+// Write a function that converts hours into seconds.
+
+// function howManySeconds(hours) {
+//   return hours * 60 * 60;
+// }
+
+// console.log(howManySeconds(2));
+// console.log(howManySeconds(10));
+// console.log(howManySeconds(24));
+
+// Create a function that takes two numbers as arguments and returns their sum.
+
+// function sum(x, y) {
+//   return x + y;
+// }
+// console.log(sum(3, 2));
+// console.log(sum(-3, -6));
+// console.log(sum(7, 3));
+
+//There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+// function remainder(x, y) {
+//   return x % y;
+// }
+
+// console.log(remainder(1, 3));
+// console.log(remainder(3, 4));
+// console.log(remainder(-9, 45));
+// console.log(remainder(5, 5));
+
+// Write a function that returns the string "something" joined with a space " " and the given argument a.
+// Assume an input is given.
+
+// const giveMeSomething = (a) => "something" + " " + a;
+// console.log(giveMeSomething("is better than nothing"));
+
+// Write a function that takes the base and height of a triangle and return its area.
+// function triArea(base, height) {
+//   return (base * height) / 2;
+// }
+// console.log(triArea(3, 2));
+// console.log(triArea(7, 4));
+// console.log(triArea(10, 10));
+
+// 1 house is 6 matches, the others are 1st + 5 matches. Func:
+
+// function matchHouses(num) {
+//   let def = 6;
+//   if (num === 0) return 0;
+//   if (num === 1) return def;
+//   if (num > 1) {
+//     return (def += 5 * num + 1 - def);
+//   }
+// }
+
+// console.log(matchHouses(1));
+// console.log(matchHouses(4));
+// console.log(matchHouses(87));
+
+// Groups and ranges indicate groups and ranges of expression characters. The regular expression x|y matches either "x" or "y".
+// "red flag".match(REGEXP)  // red
+// "blue flag".match(REGEXP)  // blue
+
+// Matches "blue" in "blue flag" and "red" in "red flag".
+//   examples
+// "red flag blue flag".match(REGEXP) ➞ ["red flag", "blue flag"]
+// "yellow flag red flag blue flag green flag".match(REGEXP) ➞ ["red flag", "blue flag"]
+// "pink flag red flag black flag blue flag green flag red flag ".match(REGEXP) ➞ ["red flag", "blue flag", "red flag"]
+
+// const REGEXP = /red flag|blue flag/g;
+// console.log(
+//   "pink flag red flag black flag blue flag green flag red flag ".match(REGEXP)
+// );
+
+//The time has a format: hours:minutes. Both hours and minutes have two digits, like 09:00.
+// Make a regexp to find time in the string: Breakfast at 09:00 in the room 123:456. In this task there’s no need to check time correctness yet, so 25:99 can also be a valid result. The regexp should not match 123:456.
+
+// RegEx
+
+// function shiftToLeft(x, y) {
+// return x * 2 ** y;
+// }
+// console.log(leftShift(5, 2));
+// console.log(leftShift(10, 3));
+// console.log(leftShift(-32, 2));
+// console.log(leftShift(-6, 5));
+// console.log(leftShift(12, 4));
+// console.log(leftShift(46, 6));
+
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+
+// function minMax(arr) {
+//   for (let i of arr) {
+//     if (arr[i] == 1) return [i, i];
+//   }
+//   return [Math.min(...arr), Math.max(...arr)];
+// }
+
+// console.log(minMax([1, 2, 3, 4, 5]));
+// console.log(minMax([2334454, 5]));
+// console.log(minMax([1]));
