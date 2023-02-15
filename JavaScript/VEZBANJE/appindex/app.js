@@ -1104,3 +1104,85 @@
 // console.log(seriesResistance([20, 15, 32.5, 2]), "69.5 ohms");
 // console.log(seriesResistance([52, 22, 20, 30]), "124 ohms");
 // console.log(seriesResistance([10, 12, 32, 4.9, 5, 6, 71]), "140.9 ohms");
+
+// Given three arguments ⁠— an object obj of the stolen items, the pet's name and a value ⁠— return an object with that name and value in it (as key-value pairs).
+
+// function addName(obj, name, value) {
+//   obj[name] = value;
+//   return obj;
+// }
+
+// console.log(addName({ piano: 500 }, "Brutus", 400));
+
+// Write a function that converts an object into an array of keys and values.
+
+// function objectToArray(obj) {
+//   return Object.entries(obj);
+// }
+
+// console.log(
+//   objectToArray({
+//     D: 1,
+//     B: 2,
+//     C: 3,
+//   })
+// );
+
+// console.log(
+//   objectToArray({
+//     likes: 2,
+//     dislikes: 3,
+//     followers: 10,
+//   })
+// );
+
+// Try finding your ancestors and offspring with code.
+// Create a function that takes a number x and a character y ("m" for male, "f" for female), and returns the name of an ancestor (m/f) or descendant (m/f).
+// If the number is negative, return the related ancestor.
+// If positive, return the related descendant.
+// You are generation 0. In the case of 0 (male or female), return "me!".
+
+// function generation(x, y) {
+//   if ((x >= -3 && x <= 3 && y == "m") || y == "f") {
+//     if (x === -3 && y == "m") {
+//       return `great grandfather`;
+//     }
+//     if (x === -3 && y == "f") {
+//       return `great grandmother`;
+//     }
+//     if (x === -2 && y == "m") {
+//       return `grandfather`;
+//     }
+//     if (x === -2 && y == "f") {
+//       return `grandmother`;
+//     }
+//     if (x === -1 && y == "m") {
+//       return `father`;
+//     }
+//     if (x === 0 && (y == "m" || y == "f")) {
+//       return `me!`;
+//     }
+//     if (x === 1 && y == "m") {
+//       return `son`;
+//     }
+//     if (x === 1 && y == "f") {
+//       return `daughter`;
+//     }
+//     if (x === 2 && y == "m") {
+//       return `grandson`;
+//     }
+//     if (x === 2 && y == "f") {
+//       return `granddaughter`;
+//     }
+//     if (x === 3 && y == "m") {
+//       return `great grandson`;
+//     }
+//     if (x === 3 && y == "f") {
+//       return `great granddaughter`;
+//     }
+//   }
+// }
+
+// console.log(generation(2, "f"));
+// console.log(generation(-3, "m"));
+// console.log(generation(1, "f"));

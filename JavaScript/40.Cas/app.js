@@ -12,7 +12,7 @@ main(ars);
 
 // CLOSURE FUNKCIJE //
 
-// Poznata je cinjenica da kada se izvrsi funkcija, sve njene lokalne promenljive pokupi garbage colector i one prestaju da postoje u memoriji.
+// Poznata je cinjenica da kada se izvrsi funkcija, sve njene lokalne promenljive pokupi garbage collector i one prestaju da postoje u memoriji.
 // Medjutim, to nije slucaj za funkcije cije promenljive zahteva neka druga funkcija.
 
 // Closure je funkcija koja ima pravo pristupa promenljivim iz domena druge funkcije.

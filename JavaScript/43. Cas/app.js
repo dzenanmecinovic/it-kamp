@@ -72,3 +72,5 @@ const getValues = (obj) => {
   }
   return values;
 };
+
+console.log(getValues(obj));

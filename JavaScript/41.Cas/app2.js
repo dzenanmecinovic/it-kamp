@@ -69,21 +69,6 @@ const myCar = {
   udaran: true,
 };
 
-// myCar.trenutnaBrzina = 0;
-// myCar.povecanjeBrzine = (parametar) => {
-//   this.trenutnaBrzina += parametar;
-//   if (trenutnaBrzina + povecanjeBrzine > 260)
-//     return `Brzina ne moze biti veca od 260`;
-// };
-// myCar.smanjenjeBrzine = (parametar) => {
-//   this.trenutnaBrzina -= parametar;
-//   if (trenutnaBrzina + smanjenjeBrzine > 260)
-//     return `Brzina ne moze biti ispod 0.`;
-// };
-// myCar.koci = () => (this.trenutnaBrzina.value = 0);
-
-// console.log(myCar.povecanjeBrzine(250));
-
 // root
 
 myCar.trenutnaBrzina = 0;
