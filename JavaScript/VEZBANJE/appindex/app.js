@@ -1021,3 +1021,86 @@
 // console.log(minMax([2334454, 5]));
 // console.log(minMax([1]));
 //
+
+// Create a function that returns an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.
+
+// function compact(arr) {
+//   arr = arr.filter(function (n) {
+//     return (
+//       n !== undefined &&
+//       n !== null &&
+//       n !== false &&
+//       n !== 0 &&
+//       n !== "" &&
+//       isNaN() != NaN
+//     );
+//   });
+//   return arr;
+// }
+// console.log(compact([0, null, "", 1, 2, 3, "Tekst"]));
+
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+// example : largestSwap(27) -> false ((72>27))
+
+// function largestSwap(num) {
+//   var ispis = String(num);
+//   if (ispis[1] + ispis[0] > ispis[0] + ispis[1]) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// console.log(largestSwap(14));
+// console.log(largestSwap(53));
+// console.log(largestSwap(99));
+// let num = 14;
+// let konzol = String(num);
+// console.log(konzol[1] + konzol[0]);
+// console.log(konzol[0] + konzol[1]);
+
+// 27
+
+// 2 >= 7 false
+
+// 42
+
+// 4 >= 2 true
+
+// Create a function that moves all capital letters to the front of a word.
+
+// function capToFront(s) {
+//   let malaSlova = "";
+//   let velikaSlova = "";
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === s[i].toUpperCase()) {
+//       velikaSlova += s[i];
+//     } else if (s[i] === s[i].toLowerCase()) {
+//       malaSlova += s[i];
+//     }
+//   }
+//   return velikaSlova.concat(malaSlova);
+// }
+
+// console.log(capToFront("dvPIHAs"));
+
+/* When resistors are connected together in series, the same current passes through each resistor in the chain and the total resistance, RT, of the circuit must be equal to the sum of all the individual resistors added together. That is:
+
+ RT = R1 + R2 + R3 ...
+
+ Create a function that takes an array of values resistance that are connected in series, and calculates the total resistance of the circuit in ohms. The ohm is the standard unit of electrical resistance in the International Systemof Units ( SI ). */
+
+// function seriesResistance(arr) {
+//   let newArr = arr.reduce((a, b) => a + b);
+//   return `${newArr} ohms.`;
+// }
+
+// console.log(seriesResistance([1, 5, 6, 3]), "15 ohms");
+// console.log(seriesResistance([0.2, 0.3, 0.4]), "0.9 ohm");
+// console.log(seriesResistance([10, 12, 1, 10]), "33 ohms");
+// console.log(seriesResistance([10, 13, 3.8, 20, 10]), "56.8 ohms");
+// console.log(seriesResistance([0.5, 0.5]), "1 ohm");
+// console.log(seriesResistance([16, 30, 22.8, 4]), "72.8 ohms");
+// console.log(seriesResistance([20, 15, 32.5, 2]), "69.5 ohms");
+// console.log(seriesResistance([52, 22, 20, 30]), "124 ohms");
+// console.log(seriesResistance([10, 12, 32, 4.9, 5, 6, 71]), "140.9 ohms");
