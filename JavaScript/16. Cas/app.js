@@ -21,7 +21,7 @@ console.log(recenica2);
 // toUpperCase() metoda za pretvaranje celog stringa u velika slova.
 console.log(recenica.toUpperCase());
 
-// toLowerCase() metoda za pretvaranje celog stringa u velika slova.
+// toLowerCase() metoda za pretvaranje celog stringa u mala slova.
 console.log(recenica.toLowerCase());
 console.log(recenica);
 // console.log(recenica2.toUpperCase())
@@ -38,7 +38,7 @@ c = a.concat(" ", b, "\nNakon toga cemo raditi React biblioteku.");
 console.log(c);
 
 // Napomena.
-// Sve string metode prave onvu promenljivu (jer su stringovi immutable vrednosti).
+// Sve string metode prave novu promenljivu (jer su stringovi immutable vrednosti).
 
 // Napraviti funkciju koja kod stringa koji predstavlja argument funkcije ispituje sledece:
 // Ako dati string ima vecu duzinu od 9:

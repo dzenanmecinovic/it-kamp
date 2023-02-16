@@ -18,6 +18,7 @@ const niz = [
   "Miona",
   "Mitar",
 ];
+
 const isEveryName = niz.every((name) => name.length >= 5);
 console.log(isEveryName);
 

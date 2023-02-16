@@ -20,7 +20,7 @@ niz.forEach((element, index) => {
 
 niz.forEach((element, index, arr) => {
   console.log(
-    `${element} se nalazi na ${index + 1}. mestu u nizu. Ceo niz je ${niz}`
+    `${element} se nalazi na ${index + 1}. mestu u nizu. Ceo niz je ${arr}`
   );
 });
 
