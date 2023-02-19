@@ -1186,3 +1186,26 @@
 // console.log(generation(2, "f"));
 // console.log(generation(-3, "m"));
 // console.log(generation(1, "f"));
+
+// Write a JavaScript function to get the current date. Go to the editor
+// Note : Pass a separator as an argument.
+
+// function currentDate(s) {
+//   const datum = new Date();
+//   return `${datum.getDate()}${s}${
+//     datum.getMonth() + 1
+//   }${s}${datum.getFullYear()}`;
+// }
+
+// console.log(currentDate("/"));
+// console.log(currentDate("-"));
+
+// Write a JavaScript function to get the number of days in a month.
+// ako februar ima 29 dana, to je prestupna godina.
+
+// function numberOfDaysInMonth(month, year) {
+//   return new Date(year, month, 0).getDate();
+// }
+// console.log(numberOfDaysInMonth(1, 2012));
+// console.log(numberOfDaysInMonth(2, 2013));
+// console.log(numberOfDaysInMonth(2, 2008));
