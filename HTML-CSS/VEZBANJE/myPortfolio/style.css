@@ -774,16 +774,3 @@ footer p {
   }
 }
 /********************************************************/
-/********************************************************/
-.absolut {
-  position: sticky;
-  left: 95%;
-  bottom: 25px;
-  font-size: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-  padding: 5px;
-  background-color: #1d99bb;
-  border: 1px black solid;
-}
