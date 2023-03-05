@@ -4,11 +4,11 @@
 
 //  1. Sta je event bubling
 
-// Event bubbling je proces u kojem se događaj koji se pokreće na određenom elementu u HTML-u prenosi.
-// kroz hijerarhiju roditeljskih elemenata dok ne stigne do najvišeg roditeljskog elementa.
-// Ovo se često događa kada postoje ugniježđeni elementi, kao što su dugmad unutar div-ova.
+// Event bubbling je proces u kojem se događaj koji se pokreće na određenom elementu u HTML-u prenosi
+// kroz hijerarhiju parent elemenata dok ne stigne do najvišeg parent elementa.
+// Ovo se često događa kada postoje ugnježđeni elementi, kao što su dugmad unutar div-ova.
 // Kada se klikne na dugme, događaj se pokreće na tom elementu, a zatim se prenosi na svakog
-// roditelja sve dok ne dosegne korenski element dokumenta. Ova vrsta ponašanja događaja može biti korisna, ali također može biti problematična ako nije pažljivo upravljana.
+// parenta sve dok ne dosegne korenski element dokumenta. Ova vrsta ponašanja događaja može biti korisna, ali također može biti problematična ako nije pažljivo upravljana.
 
 // 2. sta ce se ispisati sa typeof(null)
 
@@ -33,17 +33,17 @@ foo(0, 42);
 
 // 4. sta ce ispisati:
 for (let i = 0; i < 5; i++) {}
-console.log(i)(
-  // Ovo će izazvati grešku "ReferenceError: i is not defined".
+console.log(i);
+// Ovo će izazvati grešku "ReferenceError: i is not defined".
 
-  // Varijabla "i" je definirana samo unutar petlje "for", koristeći "let" ključnu riječ. To znači da je opseg (scope) varijable "i" ograničen na blok petlje "for". Kada se petlja završi, varijabla "i" se briše i više se ne može koristiti. Stoga, poziv "console.log(i)"
-  // izvan petlje izazvat će grešku "ReferenceError" jer varijabla "i" nije definirana u tom opsegu.
+// Varijabla "i" je definirana samo unutar petlje "for", koristeći "let" ključnu riječ. To znači da je opseg (scope) varijable "i" ograničen na blok petlje "for". Kada se petlja završi, varijabla "i" se briše i više se ne može koristiti. Stoga, poziv "console.log(i)"
+// izvan petlje izazvat će grešku "ReferenceError" jer varijabla "i" nije definirana u tom opsegu.
 
-  // 5. sta ce ispisati sledeca funkcija:
-  function () {
-    const a = (b = 3);
-  }
-)();
+// 5. sta ce ispisati sledeca funkcija:
+function funkcija() {
+  const a = 3;
+  b = 3;
+}
 console.log(typeof a !== "undefined");
 console.log(typeof b !== "undefined");
 
@@ -67,7 +67,7 @@ console.log(typeof b !== "undefined");
 // Hoisting je mehanizam u JavaScriptu koji podiže (elevates) deklaracije varijabli i funkcija na vrh (top) njihovog opsega (scope).
 // To znači da se deklaracije varijabli i funkcija obrađuju prije nego što se izvršava ostatak koda.
 
-// Kada se deklarira varijabla, ali se ne dodijeli joj vrijednost, u procesu hoistinga dobiva vrijednost "undefined".
+// Kada se deklarira varijabla, ali joj se ne dodijeli vrijednost, u procesu hoistinga dobiva vrijednost "undefined".
 // Ovo se događa jer se memorija alocira za varijablu, ali se ne inicijalizira s bilo kojom vrijednošću.
 // Ako se varijabla kasnije koristi prije nego joj se dodijeli vrijednost, dobit će se "undefined".
 

@@ -9,8 +9,10 @@ const num = 55;
 // export
 
 // Postoje dva nacina eksportovanja neke funkcije, promenljive:
-// 1. Deafult export
+// 1. export default
 // 2. export
 
 export default zbir;
 export { num };
+
+// https://javascript.info/import-export
