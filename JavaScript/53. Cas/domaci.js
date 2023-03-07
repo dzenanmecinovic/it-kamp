@@ -16,7 +16,7 @@ class Course {
     if (cena > 0) {
       this._price = cena + "€";
     } else {
-      alert(`cena ne moze biti negativan`);
+      console.log(`cena ne moze biti negativan`);
     }
   }
 
