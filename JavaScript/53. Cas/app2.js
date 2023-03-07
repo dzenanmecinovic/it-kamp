@@ -37,3 +37,25 @@ cizburger2
   })
   .then((nesto) => console.log(`Filtrirani niz je: ${nesto}.`))
   .catch((error) => console.log(error));
+
+function zadatak3(str) {
+  let str2 = str.toLowerCase();
+  let string = "";
+  for (let i = 0; i < str2.length; i++) {
+    if (
+      str[i] == "a" ||
+      str[i] == "e" ||
+      str[i] == "i" ||
+      str[i] == "o" ||
+      str[i] == "u"
+    )
+      string += str[i];
+  }
+  const promis = new Promise((resolve, reject) => {
+    if (string.length > 10) resolve("String zadovoljava uslov");
+    else reject("String ne zadovoljava uslov");
+  });
+  promis.then((nesto) => console.log(nesto)).catch((err) => console.log(err));
+}
+
+zadatak3("aeiouaeiouaeiouaeiouaeoiaeiaoeiaueoiaueoiaeoiu");
