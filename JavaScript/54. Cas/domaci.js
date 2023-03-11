@@ -42,3 +42,4 @@ function zadatak2(str) {
 }
 
 zadatak2("ovo je ovo je");
+//
