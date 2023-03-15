@@ -12,19 +12,30 @@
       <h2>To-Do App</h2>
       <input type="text" id="search" placeholder="Search..." />
     </header>
-    <div class="main">
+    <div class="container" id="main">
       <div class="flex">
-        <h1>ADD ITEMS</h1>
+        <h1 id="add">ADD ITEMS</h1>
         <input type="text" id="addItems" placeholder="Enter item name.." />
+        <button type="submit">submit</button>
       </div>
       <div class="items">
         <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-          <li>item 6</li>
+          <div class="lista">
+            <li>item 1</li>
+            <button type="button">X</button>
+          </div>
+          <div class="lista">
+            <li>item 2</li>
+            <button type="button">X</button>
+          </div>
+          <div class="lista">
+            <li>item 3</li>
+            <button type="button">X</button>
+          </div>
+          <div class="lista">
+            <li>item 4</li>
+            <button type="button">X</button>
+          </div>
         </ul>
       </div>
     </div>
