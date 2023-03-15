@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.prognoza {
+  margin: 40% 15%;
+}
+
+#btn {
+  width: 20vw;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+#rst {
+  width: 20vw;
+}

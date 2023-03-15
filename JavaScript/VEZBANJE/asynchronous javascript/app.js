@@ -56,9 +56,11 @@
 // );
 //////////////////////////////////////////////////////////////////
 
-// const dataDiv = document.getElementById("data");
-// const btn = document.getElementById("btn");
-
+const dataDiv = document.getElementById("data");
+const btn = document.getElementById("btn");
+const rst = document.getElementById("rst");
+const body = document.getElementsByName("body");
+dataDiv.style.lineHeight = "0.7";
 async function getWeather(grad) {
   const API_KEY = "1173d85e234523cafb3888e8f7fcb893";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${grad}&appid=${API_KEY}`;
@@ -66,17 +68,27 @@ async function getWeather(grad) {
   try {
     const fetched = await fetch(url);
     const data = await fetched.json();
-    return {
+    let objekat = {
       grad: data.name,
-      temperatura: data.main.temp,
+      temperatura: (data.main.temp - 272.15).toFixed(2),
       opis:
         data.weather[0].description < 270
           ? data.weather[0].description
           : "Mnogo hladno",
     };
+    btn.addEventListener(
+      "click",
+      () =>
+        (dataDiv.innerHTML = `<p>Grad: ${objekat.grad} </p><br><p> Temperatura:${objekat.temperatura}`)
+    );
+    return objekat;
   } catch (err) {
     console.log(err);
   }
 }
 
-console.log(getWeather("Novi Pazar").then((e) => console.log(e)));
+getWeather("Novi Pazar");
+
+rst.addEventListener("click", () => {
+  dataDiv.innerHTML = "";
+});
