@@ -44,7 +44,7 @@ header {
   align-self: center;
 }
 
-.flex button {
+#submit {
   height: 5vh;
   width: 10vw;
   border: 0.1px solid black;
@@ -54,7 +54,7 @@ header {
   cursor: pointer;
 }
 
-.flex button:hover {
+#submit:hover {
   box-shadow: 0 0 6px #000;
 }
 
@@ -102,9 +102,14 @@ header {
   border: 0.1px solid #000;
   border-radius: 4px;
   align-self: center;
+  cursor: pointer;
+}
+
+#rst:hover {
+  box-shadow: 0 0 6px #000;
 }
 /***********************************/
-@media (max-height: 1000px) {
+@media (max-height: 800px) {
   .lista:nth-of-type(4) {
     display: none;
   }
