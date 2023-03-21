@@ -1,6 +1,6 @@
 // console.dir(document);
 
-// console.log(document.domain);
+console.log(document.domain);
 // console.log(document.URL);
 // console.log(document.title);
 
@@ -132,3 +132,76 @@ container.appendChild(newDiv);
 
 // setAttribute uzima 2 argumenta, prvi je atribut koji zelimo da dodamo a druga je vrednost koju zelimo da dodelimo tom atributu.
 input2.setAttribute("placeholder", "Unesite email adresu...");
+console.log(input2.getAttribute("placeholder"));
+
+// NASTAVAK
+
+// EVENTS
+
+let button = document.querySelector("button");
+// button.addEventListener("click", buttonClicked);
+
+// newDiv.addEventListener("mousemove", runEvent);
+
+// Za input polja
+newDiv.addEventListener("keydown", runEvent);
+newDiv.addEventListener("keyup", runEvent);
+newDiv.addEventListener("keypress", runEvent);
+
+let inputs = document.querySelectorAll("input");
+let input3 = inputs[1];
+// console.log(input3);
+
+// input3.addEventListener("submit", getValue);
+
+let form = document.querySelector("form");
+form.addEventListener("submit", getValues);
+
+function getValues(e) {
+  e.preventDefault();
+  let inputs = document.querySelectorAll("input");
+  let itemName = inputs[1].value;
+  let email = inputs[2].value;
+  console.log(itemName, email);
+  inputs[1].value = "";
+  inputs[2].value = "";
+}
+
+// function getValue(e) {
+//   let itemValue = e.target.value;
+//   console.log(itemValue);
+// }
+
+function runEvent(event) {
+  console.log("Type of event:" + event.type);
+}
+
+function ivent() {
+  button.style.backgroundColor = "red";
+  button.style.color = "yellow";
+}
+
+function buttonClicked(event) {
+  console.log(event.target.className);
+  console.log(event.target.classList);
+
+  // console.log(event.clientX);
+  // console.log(event.clientY);
+
+  // console.log(event.altKey);
+  // console.log(event.ctrlKey);
+  // console.log(event.shiftKey);
+}
+
+let deleteButton = document.createElement("button");
+const textDeleteButton = (document.createTextNode = "x");
+deleteButton.className = "deletebtn";
+deleteButton.style.cursor = "pointer";
+deleteButton.append(textDeleteButton);
+
+let lis = document.querySelectorAll("li");
+let li = lis[lis.length - 1];
+li.appendChild(deleteButton);
+
+li.style.display = "flex";
+li.style.justifyContent = "space-between";
