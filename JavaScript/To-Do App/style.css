@@ -1,14 +1,14 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Fira sans", sans-serif;
+  font-family: "Verdana";
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(77, 77, 77);
+  background: linear-gradient(to left top, blue, green);
   color: rgb(255, 255, 255);
 }
 
@@ -20,35 +20,37 @@ header {
 }
 
 header h1 {
+  font-family: Verdana;
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 1rem;
-  color: rgb(182, 182, 182);
+  color: rgb(0, 0, 0);
 }
 
 #form {
   display: flex;
 }
 
-input,
-button {
-  border: none;
+input {
   outline: none;
 }
 
 #addItems {
-  flex: 1 1;
+  flex: 1;
   background-color: rgb(177, 177, 177);
   padding: 1rem;
   border-radius: 1rem;
   margin-right: 1rem;
-  color: black;
+  color: #000000;
   font-size: 1.25rem;
+  opacity: 0.7;
+  border: 1px solid black;
 }
 
 #addItems::placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
+  opacity: 0.4;
 }
 
 #submit {
@@ -56,10 +58,10 @@ button {
   color: burlywood;
   font-size: 1.25rem;
   font-weight: 700;
-  background-color: orangered;
+  background-color: rgb(143, 38, 0);
+  border: 0.5px solid black;
   cursor: pointer;
   transition: opacity 0.4s;
-  padding: 0.2rem;
 }
 
 #submit:hover {
@@ -71,38 +73,27 @@ button {
 }
 
 main {
-  flex: 1 1;
   max-width: 650px;
   width: 100%;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.task-list {
-  padding: 1rem;
-}
-
-.task-list h2 {
+#haDva {
   font-size: 1.5rem;
   font-weight: 300;
   color: rgb(182, 182, 182);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-#tasks .task {
+.task {
   display: flex;
   justify-content: space-between;
   background-color: gray;
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
-}
-
-#tasks .task .content .text {
-  background-color: black;
-  color: #fff;
-  font-size: 1.125rem;
-  width: 100%;
-  display: block;
+  border: 1px solid black;
 }
 
 .delete {
@@ -110,10 +101,11 @@ main {
   color: burlywood;
   font-size: 1rem;
   font-weight: 700;
-  background-color: orangered;
+  background-color: rgb(143, 38, 0);
+  border: 0.5px solid black;
   padding: 0.2rem 0.6rem;
   cursor: pointer;
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
   text-transform: uppercase;
 }
 
@@ -122,5 +114,5 @@ main {
 }
 
 .delete:active {
-  opacity: 0.6;
+  opacity: 0.5;
 }
