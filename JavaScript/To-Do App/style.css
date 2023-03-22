@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: rgb(182, 182, 182);
+}
+
+#form {
+  display: flex;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+#addItems {
+  flex: 1 1;
+  background-color: rgb(177, 177, 177);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: black;
+  font-size: 1.25rem;
+}
+
+#addItems::placeholder {
+  color: black;
+}
+
+#submit {
+  border-radius: 1rem;
+  color: burlywood;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: orangered;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  padding: 0.2rem;
+}
+
+#submit:hover {
+  opacity: 0.8;
+}
+
+#submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(182, 182, 182);
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+  background-color: black;
+  color: #fff;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+}
+
+.delete {
+  border-radius: 1rem;
+  color: burlywood;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: orangered;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  text-transform: uppercase;
+}
+
+.delete:hover {
+  opacity: 0.8;
+}
+
+.delete:active {
+  opacity: 0.6;
+}
