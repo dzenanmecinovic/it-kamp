@@ -3,6 +3,8 @@
 const form = document.querySelector("form"); // forma
 const input = document.querySelector("#addItems"); // input add items
 const list_element = document.querySelector("#tasks"); //glavni div
+const submit = document.getElementById("submit");
+submit.value = "Submit";
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
