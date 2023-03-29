@@ -1,10 +1,39 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-.videi {
-  width: 100vw;
-  height: 100vh;
+.card {
+  place-content: center center;
+}
+.card p {
+  max-width: 10rem;
+}
+.card {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+.card .tekst {
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+}
+
+li {
+  list-style: none;
+}
+
+p.imeVidea,
+p.duzinaVidea {
+  cursor: pointer;
+  min-width: 40%;
+}
+
+.kartica .slika {
+  cursor: pointer;
+  /* min-width: 10vw;
+  min-height: 15vh; */
+  width: 15vw;
+  height: 20vh;
 }
