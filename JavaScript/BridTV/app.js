@@ -1,7 +1,7 @@
 const lista = document.querySelector(".card");
 
+let bodi = document.querySelector("body");
 async function podaci() {
-  let bodi = document.querySelector("body");
   const dohvatanje = await fetch(
     "https://services.brid.tv/services/get/latest/26456/0/1/25/0.json"
   );
@@ -29,21 +29,30 @@ async function podaci() {
     }
   };
 
-  //   bodi.innerHTML += `<video src="${
-  //     klipovi[Math.floor(Math.random() * 25)].source.hd
-  //   }" controls alt="">`;
+  bodi.innerHTML += `<video class="plejer" src="${
+    klipovi[Math.floor(Math.random() * 25)].source.hd
+  }" controls alt="">`;
+
+  //   $bp("card", {
+  //     id: "554322",
+  //     width: "640",
+  //     height: "480",
+  //     video: "1271266",
+  //   });
 
   klipovi.forEach((element) => {
     lista.innerHTML += `<li>
     <div class="card">
-      <img
-        class="slika"
-        src=${element.thumbnail}
-        alt=""
-      />
-        <div class="tekst">
-          <p class="imeVidea">${element.name}</p>
-          <p class="duzinaVidea">${time(element.duration)}</p>
+        <div class="content">
+        <img
+            class="slika"
+            src=${element.thumbnail}
+            alt=""
+        />
+            <div class="tekst">
+            <p class="imeVidea">${element.name}</p>
+            <p class="duzinaVidea">${time(element.duration)}</p>
+            </div>
         </div>
     </div>
   </li>`;

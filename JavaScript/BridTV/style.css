@@ -4,36 +4,50 @@
 }
 
 .card {
-  place-content: center center;
-}
-.card p {
-  max-width: 10rem;
-}
-.card {
+  height: 100%;
+  width: 50%;
   display: grid;
-  align-items: center;
-  justify-content: center;
   grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0.3rem;
+  grid-row-gap: 0.5rem;
 }
 .card .tekst {
-  /* min-width: 100%; */
-  /* min-height: 100%; */
+  align-items: center;
 }
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 p.imeVidea,
 p.duzinaVidea {
   cursor: pointer;
-  min-width: 40%;
+  width: 100%;
+  text-align: center;
 }
 
-.kartica .slika {
+.card .slika {
   cursor: pointer;
-  /* min-width: 10vw;
-  min-height: 15vh; */
-  width: 15vw;
-  height: 20vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.plejer {
+  border: 2px solid black;
+  /* padding: 0.1rem; */
+  display: flex;
+  margin: 0.5rem auto;
+  width: auto;
+  height: 60vh;
 }
