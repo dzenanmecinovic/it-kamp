@@ -4,41 +4,40 @@ let bodi = document.querySelector("body");
 async function podaci() {
   const dohvatanje = await fetch(
     "https://services.brid.tv/services/get/latest/26456/0/1/25/0.json"
-  );
-  const data = await dohvatanje.json();
-  const klipovi = data.Video;
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network Error");
+      }
+      return response.json();
+    })
+    .catch((error) => console.error("Fetching problem: ", error));
+
+  const klipovi = dohvatanje.Video;
   console.log(klipovi);
-  let time = function (vreme) {
-    let sekunde, minuti, sati;
-    if (vreme < 60) {
-      return `00:00:${vreme < 10 ? `0${vreme}` : `${vreme}`}`;
-    } else if (vreme > 60 && vreme < 3600) {
-      minuti = Math.floor(vreme / 60);
-      sekunde = Math.floor(vreme / 60) * 60;
-      return `00:${minuti < 10 ? `0${minuti}` : `${minuti}`}:${
-        sekunde < 10 ? `0${sekunde}` : `${sekunde}`
-      }`;
-    } else if (vreme > 3600) {
-      // 5500
-      sati = Math.floor(trajanje / 3600);
-      minuti = Math.floor(trajanje / 60) - Math.floor(trajanje / 3600) * 3600;
-      sekunde = trajanje - Math.floor(trajanje / 60) * 60;
-      return `${sati < 10 ? `0${sati}` : `${sati}`}:${
-        minuti < 10 ? `0${minuti}` : `${minuti}`
-      }:${sekunde < 10 ? `0:${sekunde}` : `${sekunde}`}`;
-    }
-  };
 
-  bodi.innerHTML += `<video class="plejer" src="${
-    klipovi[Math.floor(Math.random() * 25)].source.hd
-  }" controls alt="">`;
+  function time(vreme) {
+    const hours = Math.floor(vreme / 3600);
+    const minutes = Math.floor((vreme % 3600) / 60);
+    const seconds = Math.floor(vreme % 60);
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  }
 
-  //   $bp("card", {
-  //     id: "554322",
-  //     width: "640",
-  //     height: "480",
-  //     video: "1271266",
-  //   });
+  // video player
+  let novi = document.createElement("video");
+  novi.setAttribute("class", "plejer");
+  novi.setAttribute(
+    "src",
+    `${klipovi[Math.floor(Math.random() * 25)].source.hd}`
+  );
+  novi.setAttribute("controls", "");
+  bodi.append(novi);
+
+  // bodi.innerHTML += `<video class="plejer" src="${
+  //   klipovi[Math.floor(Math.random() * 25)].source.hd
+  // }" controls alt="">`;
 
   klipovi.forEach((element) => {
     lista.innerHTML += `<li>
@@ -58,5 +57,4 @@ async function podaci() {
   </li>`;
   });
 }
-
 podaci();
