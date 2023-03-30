@@ -1,6 +1,7 @@
 const lista = document.querySelector(".card");
 
 let bodi = document.querySelector("body");
+
 async function podaci() {
   const dohvatanje = await fetch(
     "https://services.brid.tv/services/get/latest/26456/0/1/25/0.json"
@@ -55,6 +56,13 @@ async function podaci() {
         </div>
     </div>
   </li>`;
+  });
+
+  $bp("myDiv", {
+    id: "",
+    width: "640",
+    height: "480",
+    video: "VIDEO_ID",
   });
 }
 podaci();

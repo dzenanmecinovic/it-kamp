@@ -5,12 +5,11 @@
 
 body {
   width: 95vw;
-  /* height: 100vh; */
 }
 
 .card {
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0.3rem;
@@ -55,4 +54,11 @@ p.duzinaVidea {
   margin: 0.5rem auto;
   width: auto;
   height: 60vh;
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
