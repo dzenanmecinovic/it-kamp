@@ -54,7 +54,7 @@ const firstEl = brojevi.find((br) => br > 18);
 console.log(firstEl);
 
 // Ako nijedan element nije zadovoljio uslov find metoda vraca undefined.
-const firstEl2 = brojevi.find((br) => br > 30);
+const firstEl2 = brojevi.find((br) => br > 30) || "Nema";
 console.log(firstEl2);
 
 // findIndex() metoda vraca index prvog elementa koji je zadovoljio uslov.

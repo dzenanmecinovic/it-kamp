@@ -1,3 +1,4 @@
+"use strict";
 // objekat1 = new Object({
 //   ime: " Dzenan ",
 //   prezime: " Mecinovic ",
@@ -1223,3 +1224,20 @@
 // console.log(primeNum(4));
 // console.log(primeNum(3));
 // console.log(primeNum(2));
+
+// const niz = [2, 5, 9, 10];
+// const konzol = niz.find((br) => br > 10) || "Error"; // operator OR vraca prvu vrednost ako je True, ako nije onda vraca drugu.
+// console.log(konzol);
+
+// const dzenan = {
+//   name: "Dzeno",
+//   age: 19,
+//   email: {
+//     prvi: `mecinovicdz@gmail.com`,
+//     drugi: `mecinovicd@gmail.com`,
+//   },
+// };
+
+// console.log(false || true); // ako je prva false, uzmi true.
+// console.log(dzenan?.emajl?.prvi ?? "Nema"); // ako je prva vrednost null ili undefined, uzmi drugu vrednost.
+// console.log(dzenan?.emajl?.drugi && "Nema"); // ako je prva true, uzmi false. A ako su sve true, uzmi poslednju true.
