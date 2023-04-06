@@ -1241,3 +1241,18 @@
 // console.log(false || true); // ako je prva false, uzmi true.
 // console.log(dzenan?.emajl?.prvi ?? "Nema"); // ako je prva vrednost null ili undefined, uzmi drugu vrednost.
 // console.log(dzenan?.emajl?.drugi && "Nema"); // ako je prva true, uzmi false. A ako su sve true, uzmi poslednju true.
+
+function unos() {
+  function prozor() {
+    const prozorcic = prompt("", "Unesite email");
+    if (!prozorcic.includes("@")) {
+      prozor();
+    }
+    const output = prozorcic.split("@");
+    console.log(prozorcic.padStart(40, "*"));
+  }
+
+  prozor();
+}
+
+unos();
