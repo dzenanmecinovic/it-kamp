@@ -1,4 +1,4 @@
-// 3. Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu pripadaju iskljucivo engelskoj abecedi.
+// 3. Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu pripadaju iskljucivo engleskoj abecedi.
 
 // function kolikoMalih(recenica) {
 //     let counter = 0;
@@ -30,14 +30,17 @@ function viseSlova(recenica) {
       velika++;
     }
   }
-  if (mala > velika) {
-    return "U stringu je vise malih slova.";
-  } else if (velika > mala) {
-    return "U stringu je vise velikih slova.";
-  }
+  return mala > velika
+    ? "U stringu je vise malih slova."
+    : "U stringu je vise velikih slova.";
+  // if (mala > velika) {
+  //   return "U stringu je vise malih slova.";
+  // } else if (velika > mala) {
+  //   return "U stringu je vise velikih slova.";
+  // }
 }
 
-console.log(viseSlova("visee slova"));
+console.log(viseSlova("VISESLOVASLOVA deset deset"));
 
 // Sva velika slova u stringu treba svesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string 'webnstudy.com'. Slova koja se koriste u stringu pripadaju iskljucivo engleskoj abecedi.
 
@@ -52,14 +55,17 @@ function velikaUMala(recenica) {
   return novi;
 }
 
-console.log(velikaUMala("VeLILILIwwwWWWliko Slovo"));
+const velikaMala = (recenica) => recenica.toLowerCase();
+
+console.log(velikaUMala("VELIKA SLOVA U RECENICI"));
+console.log(velikaMala("VELIKA SLOVA U RECENICI"));
 
 // Pronaci poziciju poslednjeg razmaka u stringu. Npr. za uneto 'Pera ima devojku', rezultat je 8.
 
 const poslednjiRazmak = (recenica) => recenica.lastIndexOf(" ");
 console.log(poslednjiRazmak("Prvi razmak drugi"));
 
-// Ispisati duzinu prve reci unetog stringa. Npr za uneto 'Peta ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodece razmake.
+// Ispisati duzinu prve reci unetog stringa. Npr za uneto 'Pera ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodece razmake.
 
 function duzinaPrveReci(recenica) {
   let prviRazmak = recenica.indexOf(" ");

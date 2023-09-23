@@ -66,7 +66,9 @@ console.log(endsWithDanas);
 
 const zadatak2 = (recenica) => {
   if (recenica.includes("skola")) {
-    return recenica.indexOf("skola");
+    return `Pozicija prvog pojavljivanja reci skola: ${recenica.indexOf(
+      "skola"
+    )}`;
   } else if (recenica.startsWith("Automobil")) {
     return true;
   } else if (recenica.length % 2 === 0) {
