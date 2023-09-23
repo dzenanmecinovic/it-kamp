@@ -57,7 +57,7 @@ console.log(pozicija6);
 // Ako se pojavljuje jednom, vratiti poziciju jednog pojavljivanja, ako se ne pojavljuje vratiti poruku
 // nismo pronasli dati string
 
-const koOsvaja = () => {
+const koOsvaja = (recenica) => {
   let prvo = recenica.indexOf("ko osvaja");
   let poslednje = recenica.lastIndexOf("ko osvaja");
   if (prvo === -1) {
@@ -68,7 +68,7 @@ const koOsvaja = () => {
     return (
       "Reci 'ko osvaja' se nalaze na: " +
       prvo +
-      "poziciji\nPoslednje pojavljivanje reci ko osvaja se nalazi na: " +
+      " poziciji\nPoslednje pojavljivanje reci ko osvaja se nalazi na: " +
       poslednje +
       "poziciji"
     );
@@ -83,4 +83,5 @@ const koOsvaja = () => {
   //   }
 };
 
-// console.log(koOsvaja("ko osvaja , ko osvaja"));
+console.log(koOsvaja("test recenice ko osvaja , ko osvaja"));
+console.log(koOsvaja("nema trazenog stringa"));

@@ -1,10 +1,10 @@
 // Truthy and falsy values
-const isSunny = false;
+let isSunny = false;
 // Kraca sintaksa!
 if (isSunny) {
-    console.log("Napolju je suncano.")
+  console.log("Napolju je suncano.");
 } else {
-    console.log("Napolju je kisa.")
+  console.log("Napolju je kisa.");
 }
 
 // Postoji samo 8 FALSY vrednosti i one su:
@@ -20,12 +20,12 @@ if (isSunny) {
 // Napraviti funkciju gde se trazi unos od strane korisnika i vraca poruka da li je uneta vrednost TRUTHY ili FALSY vrednost.
 
 function myFunction() {
-    const unos = prompt("Unesite neku vrednost")
-    if(unos) {
-        return "Uneta vrednost je TRUTHY"
-    } else {
-        return "Uneta vrednost je FALSY"
-    }
+  const unos = prompt("Unesite neku vrednost");
+  if (unos) {
+    return "Uneta vrednost je TRUTHY";
+  } else {
+    return "Uneta vrednost je FALSY";
+  }
 }
 
-console.log(myFunction())
+console.log(myFunction());
