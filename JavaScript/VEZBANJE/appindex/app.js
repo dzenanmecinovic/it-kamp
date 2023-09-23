@@ -1242,17 +1242,25 @@
 // console.log(dzenan?.emajl?.prvi ?? "Nema"); // ako je prva vrednost null ili undefined, uzmi drugu vrednost.
 // console.log(dzenan?.emajl?.drugi && "Nema"); // ako je prva true, uzmi false. A ako su sve true, uzmi poslednju true.
 
-function unos() {
-  function prozor() {
-    const prozorcic = prompt("", "Unesite email");
-    if (!prozorcic.includes("@")) {
-      prozor();
-    }
-    const output = prozorcic.split("@");
-    console.log(prozorcic.padStart(40, "*"));
-  }
+// function unos() {
+//   prozor();
+//   function prozor() {
+//     const prozorcic = prompt("", "Unesite email");
+//     if (!prozorcic.includes("@")) {
+//       prozor();
+//     }
+//     const output = prozorcic.split("@");
+//     console.log(prozorcic.slice(-1, -5).padStart(10, "*"));
+//   }
+// }
 
-  prozor();
-}
+// unos();
 
-unos();
+// let provera = true && NaN;
+// console.log(provera);
+
+// let email = "ovojettre@outlook.com";
+// let isecen = email.slice(0, email.length / 3);
+// let ostatakEmaila = email.slice(email.length / 4, email.length);
+// let finish = ostatakEmaila.padStart(email.length, "*");
+// console.log(finish);
