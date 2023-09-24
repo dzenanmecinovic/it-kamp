@@ -52,7 +52,7 @@ console.log(menjanje("123456789"));
 console.log(menjanje("12345678b"));
 console.log(menjanje("12345678c"));
 console.log(menjanje("12345678x"));
-// console.log(menjanje("Pera ima devojku."));
+console.log(menjanje("Pera ima devojku."));
 
 // 2.  Unose se dva stringa A i B. Kreirati novi string kao kombinaciju stringova A i B, tako što se kombinuju prvi sa prvim, drugi sa drugim, treći sa trećim znakom itd. Ako je jedan string duži od drugog, na kraju samo dodati znakove viška. Npr. za stringove "PERA" i "sladoled" dobija se string "PsElRaAdoled".
 
@@ -133,9 +133,9 @@ console.log(protectEmail("dzenanzecic@hotmail.com"));
 //   console.log(zastitiEmail("zastiti@zastiti.zassssstiti"))
 
 function zastitaEmaila(email) {
-  let podeliti = email.split("@");
-  let prviDeo = podeliti[0];
-  let drugiDeo = podeliti[1];
+  let split = email.split("@");
+  let prviDeo = split[0];
+  let drugiDeo = split[1];
   let pola = prviDeo.length / 2;
   let prvi = prviDeo.substr(0, prviDeo.length - pola);
   return prvi + "...@" + drugiDeo;
