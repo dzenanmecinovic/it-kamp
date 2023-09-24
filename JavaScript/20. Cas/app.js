@@ -72,6 +72,8 @@ function duzinaPrveReci(recenica) {
   return `Duzina prve reci je ${prviRazmak}.`;
 }
 
+const duzina = (m) => `Duzina prve reci je ${m.indexOf(" ")}`;
+
 console.log(duzinaPrveReci("Prvaaaa rec je prva."));
 
 // Iz unetog stringa treba izdvojiti N znakova sa leve strane. Npr. za string 'Pera ima devojku' i N = 6, dobija se 'Pera i'. Ako je N vece od duzine stringa, kao rezultat se dobija ceo string.
@@ -84,7 +86,29 @@ function brojZnakova(recenica, n) {
   }
 }
 
+const leftChars = (sen, len) => (len > sen.length ? sen : sen.substr(0, len));
+console.log(leftChars("Pera ima devojku", 6));
+
 console.log(`Trazeni karakteri su: ${brojZnakova("broj prvih", 1)}`);
 
 // Za Domaci:
 // Proveriti da li je uneti string palindrom (potpuno je isti kada se cita otpozadi).
+
+function isPalindrome(str) {
+  let noSpace = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      noSpace += str[i];
+    } else {
+      continue;
+    }
+  }
+  let reversed = noSpace.split("").reverse().join("");
+  if (noSpace.toLowerCase() === reversed.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isPalindrome("Ana voli milovana"));
