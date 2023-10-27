@@ -51,6 +51,13 @@ function rastojanjeTacaka(xa, ya, xb, yb) {
 console.log(rastojanjeTacaka(23, 42, 52, 92));
 console.log(rastojanjeTacaka(1, 1, 4, 5)); // root
 
+function greet(who) {
+  !who ? null : console.log(`Pozdrav, ${who}!`);
+}
+
+greet("Dzenan");
+greet();
+
 // Takmicari su radili testove iz matematike i programiranja. Za svaki predmet dobili su odredjeni broj poena(ceo broj od 0 do 50). Takmicari se rangiraju po ukupnom broju poena iz oba predmeta. Ako dva takmicara imaju isti broj poena, pobednik je onaj koji ima vise poena iz programiranja. Potrebno je napisati program koji odredjuje je pobednika takmicenja.
 
 // Ulaz: Ucitavaju se podaci za dva takmicara. Za svakog takmicara se ucitava broj poena iz matematike, a zatim broj poena iz programiranja.
